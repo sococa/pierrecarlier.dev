@@ -1,0 +1,83 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* fonts */
+@font-face{
+    font-family: 'nunito sans';
+    src : url(fonts/nunito/Nunito-VariableFont_wght.ttf)
+} 
+
+
+@font-face{
+    font-family: 'abril_fatface';
+    src : url(fonts/abril_fatface/AbrilFatface.ttf)
+} 
+
+/*CSS géneral*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    position:fixed;
+    font-size: 14px;
+    top:0;
+    right: 0;
+    left: 0;
+    font-family: 'nunito sans';
+    text-transform: uppercase;   
+}
+
+nav a{
+    text-decoration: none;
+    color:#000;
+}
+
+.container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.slider_bloc {    
+    font: 30px;
+    border-bottom: 5px solid grey;
+    height: 100vh;
+    scroll-snap-align: center;
+}
+/*Début des slides*/
+h1{
+    font-family: "abril_fatface";
+    font-size: clamp(36px, 9vw, 62px)
+}
+.first_slide{
+    background-color: #E5F0F8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 12vh;
+    text-align: center;
+}
+
+.first_slide .yellow_highlight{
+    background-image: linear-gradient(
+    transparent 65%,
+    #F7DF1E 60%
+  );
+  background-size: 90% 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.first_slide_photo{
+    width: 80vw;
+    max-width: 300px;
+}
+
+.first_slide_logos{
+    width: 7vw;
+    max-width: 30px;
+    min-width: 25px;
+}
