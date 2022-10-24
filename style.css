@@ -2,11 +2,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 }
 
 /* fonts */
 @font-face{
-    font-family: 'nunito sans';
+    font-family: 'nunito_sans';
     src : url(fonts/nunito/Nunito-VariableFont_wght.ttf)
 } 
 
@@ -17,15 +18,19 @@
 } 
 
 /*CSS géneral*/
+body {
+    overflow-y: hidden; 
+}
+
 nav{
     display: flex;
     justify-content: space-around;
     position:fixed;
     font-size: 14px;
-    top:0;
+    top:20px;
     right: 0;
     left: 0;
-    font-family: 'nunito sans';
+    font-family: 'nunito_sans', Verdana, Tahoma, sans-serif;
     text-transform: uppercase;   
 }
 
@@ -42,21 +47,48 @@ nav a{
 
 .slider_bloc {    
     font: 30px;
-    border-bottom: 5px solid grey;
     height: 100vh;
-    scroll-snap-align: center;
+    scroll-snap-align:start;
 }
+
+/* Intersection Observer */
+:root{
+    --bg-color: #222;
+    --scale-value: 0;
+}
+
+.displayed:after{
+    --scale-value: 1;
+}
+
+.nav_item {
+    position:relative;
+}
+
+.nav_item::after{
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: blue;
+    transition: transform .25s ease-in-out;
+    transform-origin: left;
+    transform: scaleX(var(--scale-value));
+}
+
 /*Début des slides*/
 h1{
-    font-family: "abril_fatface";
-    font-size: clamp(36px, 9vw, 62px)
+    font-family: 'abril_fatface','nunito_sans', Verdana, Tahoma, sans-serif;
+    font-size: clamp(36px, 9vw, 40px)
 }
 .first_slide{
     background-color: #E5F0F8;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-between;
     padding-top: 12vh;
     text-align: center;
 }
@@ -64,20 +96,87 @@ h1{
 .first_slide .yellow_highlight{
     background-image: linear-gradient(
     transparent 65%,
-    #F7DF1E 60%
+    #F3E675 60%
   );
   background-size: 90% 100%;
   background-repeat: no-repeat;
   background-position: right;
 }
 
+
 .first_slide_photo{
-    width: 80vw;
-    max-width: 300px;
+    width: 100vw;
+    max-width: 400px;
 }
 
 .first_slide_logos{
     width: 7vw;
     max-width: 30px;
     min-width: 25px;
+    margin-top: 40px;
+}
+
+.first_slide button{
+    font-family: 'nunito_sans', Verdana, Tahoma, sans-serif;
+    background-color: #28375C;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 8px 20px 8px 20px;
+    margin-top: 45px;
+    box-shadow:  #E5F0F8 5px 5px 0px -3px, #28375C 5px 5px;
+    border:none;
+    cursor:pointer;
+}
+
+.first_slide button:active {
+    transform: translate(5px, 5px);
+    box-shadow:  none;
+}
+
+@media (min-width: 767px) { 
+    nav{
+        margin: 0 10vw 0 10vw;
+    }
+
+    h1{
+        font-size: clamp(36px, 5vw, 58px)
+    }
+
+    .first_slide{
+        flex-direction: row;
+        text-align: start;
+        align-items: flex-end;
+        padding-left: 100px;
+    }
+
+    .first_slide_logos {
+        width: 4vw;
+        max-width: 55px;
+    }
+    
+    .first_slide button{
+        margin-bottom: 35vh;
+        font-size: 18px;
+    }
+
+    .first_slide_photo{
+        width: 50vw;
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 1400px) {
+    h1 {
+        font-size: clamp(36px, 5vw, 72px);
+    }
+
+    .slider_bloc{
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    .first_slide_photo{
+        margin-bottom: 15vh;
+        width: 35vw;
+    }
 }
