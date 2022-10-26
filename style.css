@@ -2,24 +2,24 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
+
 }
 
 /* fonts */
 @font-face{
     font-family: 'nunito_sans';
     src : url(fonts/nunito/Nunito-VariableFont_wght.ttf)
-} 
+}
 
 
 @font-face{
     font-family: 'abril_fatface';
     src : url(fonts/abril_fatface/AbrilFatface.ttf)
-} 
+}
 
 /*CSS géneral*/
 body {
-    overflow-y: hidden; 
+    overflow-y: hidden;
 }
 
 nav{
@@ -31,7 +31,7 @@ nav{
     right: 0;
     left: 0;
     font-family: 'nunito_sans', Verdana, Tahoma, sans-serif;
-    text-transform: uppercase;   
+    text-transform: uppercase;
 }
 
 nav a{
@@ -42,13 +42,27 @@ nav a{
 .container {
     height: 100vh;
     overflow-y: scroll;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y mandatory; 
+} 
+
+.slider_bloc {
+    font: 30px;
+    height: 100vh; 
+    scroll-snap-align:start; 
+} 
+
+h1{
+    font-family: 'abril_fatface','nunito_sans', Verdana, Tahoma, sans-serif;
+    font-size: clamp(36px, 9vw, 40px)
 }
 
-.slider_bloc {    
-    font: 30px;
-    height: 100vh;
-    scroll-snap-align:start;
+h2 {
+    font-family: 'abril_fatface','nunito_sans', Verdana, Tahoma, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    padding-top:55px;
+    padding-bottom: 30px;
+    margin-top: 5px;
 }
 
 /* Intersection Observer */
@@ -71,19 +85,21 @@ nav a{
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 2px;
-    background: blue;
+    height: 15px;
+    background-image: linear-gradient(
+    transparent 65%,
+    #F3E675 60%
+    );
+    background-repeat: no-repeat;
+    background-position: right;
     transition: transform .25s ease-in-out;
     transform-origin: left;
     transform: scaleX(var(--scale-value));
 }
 
 /*Début des slides*/
-h1{
-    font-family: 'abril_fatface','nunito_sans', Verdana, Tahoma, sans-serif;
-    font-size: clamp(36px, 9vw, 40px)
-}
 .first_slide{
+    height: 100vh;
     background-color: #E5F0F8;
     display: flex;
     flex-direction: column;
@@ -133,7 +149,15 @@ h1{
     box-shadow:  none;
 }
 
-@media (min-width: 767px) { 
+.second_slide {
+    background: linear-gradient(to top, #E5F0F8 85%, white 15%);
+}
+
+.second_slide h2{
+    color: #28375C;
+}
+
+@media (min-width: 767px) {
     nav{
         margin: 0 10vw 0 10vw;
     }
@@ -153,7 +177,7 @@ h1{
         width: 4vw;
         max-width: 55px;
     }
-    
+
     .first_slide button{
         margin-bottom: 35vh;
         font-size: 18px;
