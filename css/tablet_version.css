@@ -41,35 +41,43 @@
         max-width: 600px;
     }
 
-    .second_slide {
+    #about_slide {
         background: linear-gradient(to right, white 55%, #E5F0F8 15%);
         display: flex;
         flex-direction:row;
         flex-wrap: wrap;
     }
 
-    .second_slide {
+    #about_slide {
         align-items: start;
         
     }
 
-    .second_slide h2 {
+    #about_slide h2 {
         width: 100vw;
     }
 
-    .second_slide .titleColorWhite {
+    #about_slide .titleColorWhite {
         color: #ffffff;
     }    
 
-    .second_slide .aboutme_description {
+    #about_slide .aboutme_description {
         width: 45vw;
         justify-content: none;
         margin-bottom: 20vh;
     }
 
-    .second_slide ul {
+    #about_slide ul {
         width: 45vw;
         margin-top: -30px;
         height: 300px;
+        position: relative;
+        left: 70px;
+    }
+
+    #contact_slide {
+        width: 80vw;
+        margin: auto;
+        max-width: 1200px;
     }
 }

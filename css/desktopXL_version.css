@@ -13,7 +13,7 @@
         width: 35vw;
     }
 
-    .second_slide .aboutme_description {
+    #about_slide .aboutme_description {
         padding-right: 2vw;
         padding-left: 2vw;
     }

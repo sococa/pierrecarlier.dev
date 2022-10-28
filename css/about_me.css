@@ -1,5 +1,5 @@
 
-.second_slide {
+#about_slide {
     background: linear-gradient(to top, #E5F0F8 82%, white 15%);
     display: flex;
     flex-direction: column;
@@ -8,19 +8,19 @@
     height: none;
 }
 
-.second_slide .aboutme_description {
+#about_slide .aboutme_description {
     display:flex;
     flex-direction: column;
     justify-content: space-around;
     height: 30vh;
 }
 
-.aboutme_description span {
+#aboutme_description span {
     font-weight: 900;
     color: #28375C;
 }
 
-.second_slide ul {
+#about_slide ul {
     display: flex;
     flex-direction: column;
     align-items:flex-end;

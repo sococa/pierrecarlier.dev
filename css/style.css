@@ -1,7 +1,12 @@
+
 @import 'general.css';
 @import 'intersection_observer.css';
 @import 'first_slide.css';
-@import 'second_slide.css';
+@import 'about_me.css';
+@import 'contact_form.css';
+
+
+
 @import 'tablet_version.css';
 @import 'desktopXL_version.css'
 
