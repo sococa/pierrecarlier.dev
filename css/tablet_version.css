@@ -1,0 +1,75 @@
+@media (min-width: 767px) {
+    nav{
+        margin: 0 10vw 0 10vw;
+    }
+
+    h1{
+        font-size: clamp(36px, 5vw, 58px)
+    }
+
+    h2 {
+        font-size: 4em;
+    }
+
+    .hide_space {
+        display:contents
+    }    
+
+    p{
+        font-size: 18px;
+    }
+
+    .first_slide{
+        flex-direction: row;
+        text-align: start;
+        align-items: flex-end;
+        padding-left: 100px;
+    }
+
+    .first_slide_logos {
+        width: 4vw;
+        max-width: 55px;
+    }
+
+    .first_slide button{
+        margin-bottom: 35vh;
+        font-size: 18px;
+    }
+
+    .first_slide_photo{
+        width: 50vw;
+        max-width: 600px;
+    }
+
+    .second_slide {
+        background: linear-gradient(to right, white 55%, #E5F0F8 15%);
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+    }
+
+    .second_slide {
+        align-items: start;
+        
+    }
+
+    .second_slide h2 {
+        width: 100vw;
+    }
+
+    .second_slide .titleColorWhite {
+        color: #ffffff;
+    }    
+
+    .second_slide .aboutme_description {
+        width: 45vw;
+        justify-content: none;
+        margin-bottom: 20vh;
+    }
+
+    .second_slide ul {
+        width: 45vw;
+        margin-top: -30px;
+        height: 300px;
+    }
+}

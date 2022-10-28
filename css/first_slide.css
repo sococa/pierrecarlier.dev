@@ -1,0 +1,49 @@
+.first_slide{
+    background-color: #E5F0F8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    padding-top: 12vh;
+    text-align: center;
+}
+
+.first_slide .yellow_highlight{
+    background-image: linear-gradient(
+    transparent 65%,
+    #F3E675 60%
+  );
+  background-size: 90% 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+
+.first_slide_photo{
+    width: 100vw;
+    max-width: 400px;
+}
+
+.first_slide_logos{
+    width: 7vw;
+    max-width: 30px;
+    min-width: 25px;
+    margin-top: 40px;
+}
+
+.first_slide button{
+    font-family: 'nunito_sans', Verdana, Tahoma, sans-serif;
+    background-color: #28375C;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 8px 20px 8px 20px;
+    margin-top: 45px;
+    box-shadow:  #E5F0F8 5px 5px 0px -3px, #28375C 5px 5px;
+    border:none;
+    cursor:pointer;
+}
+
+.first_slide button:active {
+    transform: translate(5px, 5px);
+    box-shadow:  none;
+}

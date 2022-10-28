@@ -1,0 +1,45 @@
+
+.second_slide {
+    background: linear-gradient(to top, #E5F0F8 82%, white 15%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: none;
+}
+
+.second_slide .aboutme_description {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 30vh;
+}
+
+.aboutme_description span {
+    font-weight: 900;
+    color: #28375C;
+}
+
+.second_slide ul {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    justify-content:space-around;
+    height: 30vh;
+    font-family: 'nunito_sans', Verdana, Tahoma, sans-serif;
+    margin-top: 8vh;
+}
+
+ul li {
+    list-style-type: none;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    color: #28375C;
+    font-size: 1.5em;
+    font-weight: 900;
+    background-image: linear-gradient( 
+        transparent 65%, 
+        #F3E675 60% 
+    );
+}

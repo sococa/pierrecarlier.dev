@@ -1,0 +1,20 @@
+@media (min-width: 1400px) {
+    h1 {
+        font-size: clamp(36px, 5vw, 72px);
+    }
+
+    .slider_bloc{
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    .first_slide_photo{
+        margin-bottom: 15vh;
+        width: 35vw;
+    }
+
+    .second_slide .aboutme_description {
+        padding-right: 2vw;
+        padding-left: 2vw;
+    }
+}

@@ -1,0 +1,79 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+@font-face{
+    font-family: 'nunito_sans';
+    src : url(fonts/nunito/Nunito-VariableFont_wght.ttf)
+}
+
+
+@font-face{
+    font-family: 'abril_fatface';
+    src : url(fonts/abril_fatface/AbrilFatface.ttf)
+}
+
+body {
+    overflow-y: hidden;
+}
+
+.hide_space {
+    display: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    position:fixed;
+    font-size: 14px;
+    top:20px;
+    right: 0;
+    left: 0;
+    font-family: 'nunito_sans', Verdana, Tahoma, sans-serif;
+    text-transform: uppercase;
+}
+
+nav a{
+    text-decoration: none;
+    color:#000;
+}
+
+.container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory; 
+} 
+
+.slider_bloc {
+    font: 30px;
+    height: 100vh; 
+    scroll-snap-align:start; 
+} 
+
+.slider_bloc:not(:first-child){
+    padding-right: 4vw;
+    padding-left: 4vw;
+}
+
+h1{
+    font-family: 'abril_fatface','nunito_sans', Verdana, Tahoma, sans-serif;
+    font-size: clamp(36px, 9vw, 40px)
+}
+
+h2 {
+    font-family: 'abril_fatface','nunito_sans', Verdana, Tahoma, sans-serif;
+    font-size: 28px;
+    text-align: center;
+    padding-top:55px;
+    padding-bottom: 30px;
+    margin-top: 5px;
+    color: #28375C;
+}
+
+p {
+    font-family: 'nunito_sans', Verdana, Tahoma, sans-serif;
+    font-size: 16px;
+}

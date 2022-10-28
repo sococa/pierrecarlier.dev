@@ -11,10 +11,8 @@ const options = {
 const observer = new IntersectionObserver(handleObserver, options)
 
 const targets = document.querySelectorAll(".slider_bloc")
-console.log(targets)
 
 targets.forEach(target => {
-    console.log(target)
     observer.observe(target)
 })
 
