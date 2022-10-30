@@ -1,0 +1,18 @@
+#services_slide h2 {
+    padding-bottom: 0;
+}
+
+#services_slide p {
+    font-size: 12px;
+    background-color: #F3E675;
+    width: 110px;
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#services_slide a {
+    text-decoration: none;
+    color:#000;
+    cursor: pointer;
+}

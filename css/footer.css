@@ -1,0 +1,24 @@
+footer {
+    background-color: #28375C;
+    text-align: center;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 35vw;
+    padding-right: 35vw;
+    padding-top: 50px;
+    padding-bottom: 15px;
+}
+
+footer img {
+    width: 20px;
+    max-width: 20px;
+}
+
+footer p {
+    color: #ffffff;
+    font-size: 12px;
+    padding-bottom: 25px;
+}

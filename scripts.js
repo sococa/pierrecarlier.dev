@@ -22,8 +22,27 @@ const underline = id => {
     formerId = id
 }
 
-function handleObserver(entries, observer){
+function handleObserver(entries, observer) {
     entries.forEach(entry => {
-      entry.isIntersecting && underline(entry.target.dataset.id)
+        entry.isIntersecting && underline(entry.target.dataset.id)
     })
+}
+
+/* smtp js */
+function sendEmail(){
+
+    const email = document.getElementsByClassName('email')
+    const message = document.getElementsByClassName('message')
+
+    Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "pierrocarlier@gmail.com",
+        Password: "DF3F9E88F1C9662578AA16EE8C6C6B7606C8",
+        To: email.value,
+        From: "pierrocarlier@gmail.com",
+        Subject: "This is the subject",
+        Body: message.value
+    }).then(
+        message => alert(message)
+    )
 }

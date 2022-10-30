@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" />
     <script type="module" src="scripts.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <title>PierreCarlier.dev</title>
 </head>
 <header>
     <nav>
-        <a class="nav_item displayed"  href="#about_slide">about me</a>
+        <a class="nav_item displayed" href="#about_slide">about me</a>
         <a class="nav_item" href="#my_work_slide">my work</a>
         <a class="nav_item" href="#services_slide">services</a>
         <a class="nav_item" href="#contact_slide">contact</a>
@@ -20,18 +21,20 @@
 
 <body>
     <div class="container">
-        <div class="slider_bloc first_slide" >
+        <div class="slider_bloc first_slide">
             <div class="first_part">
                 <h1>Hi, I’m <span class="yellow_highlight">Pierre,<br></span><span class="yellow_highlight">Web
-                    Developer.</span></h1>
+                        Developer.</span></h1>
                 <div class="logos_container">
                     <img class="first_slide_logos" src="images\logos\html.webp" alt="html_logo" title="html">
                     <img class="first_slide_logos" src="images\logos\css.webp" alt="css_logo" title="css">
-                    <img class="first_slide_logos" src="images\logos\javascript.webp" alt="javascript_logo" title="javascript">
+                    <img class="first_slide_logos" src="images\logos\javascript.webp" alt="javascript_logo"
+                        title="javascript">
                     <img class="first_slide_logos" src="images\logos\react.webp" alt="react_logo" title="react">
                     <img class="first_slide_logos" src="images\logos\node.webp" alt="node_logo" title="node">
                     <img class="first_slide_logos" src="images\logos\SQL.webp" alt="sql_logo" title="sql">
-                    <img class="first_slide_logos" src="images\logos\wordpress.webp" alt="wordpress_logo" title="wordpress">
+                    <img class="first_slide_logos" src="images\logos\wordpress.webp" alt="wordpress_logo"
+                        title="wordpress">
                 </div>
                 <button>see my work</button>
             </div>
@@ -39,13 +42,17 @@
         </div>
 
         <div class="slider_bloc" id="about_slide" data-id=0>
-            <h2>ABOUT<span class="hide_space">&nbsp;&nbsp;&nbsp;</span><span class="titleColorWhite"> ME</span></h2>
+            <h2>About<span class="hide_space">&nbsp;&nbsp;&nbsp;</span><span class="title_color_white"> me</span></h2>
             <div class="aboutme_description">
                 <p>
-                    <span>Curious</span> and eager for knowledge, the profession of web developer logically presented itself to me in 2020. It's with <span>enthusiasm</span> and <span>conviction</span> that I have completed my retraining in this field. 
+                    <span>Curious</span> and eager for knowledge, the profession of web developer logically presented
+                    itself to me in 2020. It's with <span>enthusiasm</span> and <span>conviction</span> that I have
+                    completed my retraining in this field.
                 </p>
                 <p>
-                    I am a <span>pragmatic</span> developer who favors <span>efficiency and consistency</span>. Web development is a technique. To have an <span>effective</span> site or application, the technique used must be good.
+                    I am a <span>pragmatic</span> developer who favors <span>efficiency and consistency</span>. Web
+                    development is a technique. To have an <span>effective</span> site or application, the technique
+                    used must be good.
                 </p>
             </div>
             <ul>
@@ -57,27 +64,42 @@
         </div>
 
         <div class="slider_bloc" id="my_work_slide" data-id=1>
-            <h2>MY WORK</h2>
+            <h2>My <span class="title_color_white"> work</span></h2>
+            <div class="my_work_nav">
+                <button autofocus>All</button>
+                <button>React.JS / Node.JS</button>
+                <button>Wordpress</button>
+                <button>Vanilla JS</button>
+                <button>Html / CSS</button>
+            </div>
+            <div class="slider"></div>
         </div>
 
         <div class="slider_bloc" id="services_slide" data-id=2>
-            <h2>COMPÉTENCES <br><span class="sky_blue">& SERVICES</span></h2>
+            <h2>Competences <br><span class="sky_blue">& services</span></h2>
+            <P><a href="cv.pdf" download="cv">Download my cv</a></P>
         </div>
-
         <div class="slider_bloc" id="contact_slide" data-id=3>
-            <h2>CONTACT <span class="sky_blue">FORM</span></h2>
+            <h2>Contact <span class="sky_blue">form</span></h2>
             <p>Let's start a project together ! D'ont hesitate to contact me.</p>
-            <form action="" method="POST">
-                <input type="text" placeholder="Prénom">
-                <input type="text" placeholder="Nom">
-                <input type="email" placeholder="Email">
-                <textarea placeholder="Votre message"></textarea>
+            <form onsubmit="sendEmail()" method="post">
+                <input class="name" type="text" placeholder="name" required>
+                <input class="email" type="email" placeholder="Email" required>
+                <input class="subject" type="text" placeholder="Subject" required>
+                <textarea class="message" placeholder="Your message" required></textarea>
                 <input type="submit" value="submit">
             </form>
         </div>
+       
     </div>
 </body>
 <footer>
+    <div>
+        <a href="https://www.linkedin.com/in/pierre-carlier-809b80180/"><img src="images\logos\linkedin.webp" alt="logo_linkedin"></a>
+        <a href="https://github.com/sococa"><img src="images\logos\github.webp" alt="logo_github"></a>
+        <a href="tel:0603174143"><img src="images\logos\phone.webp" alt="illustration_phone"></a>
+    </div>
+    <p>@2022 Pierre Carlier et Kimberly Sanchez, TOUS DROITS RESERVÉS</p>
 </footer>
 
 </html>
