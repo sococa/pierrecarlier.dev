@@ -2,17 +2,51 @@
     padding-bottom: 0;
 }
 
+#services_slide h3 {
+    font-family: 'abril_fatface','nunito_sans', Verdana, Tahoma, sans-serif;
+    text-transform: uppercase;
+    font-size: clamp(14px, 3vw, 20px);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-top: 10px;
+    color: #28375C;
+}
+
 #services_slide p {
     font-size: 12px;
-    background-color: #F3E675;
-    width: 110px;
+    width: 150px;
     margin: auto;
     margin-bottom: 30px;
     text-align: center;
+    background-color:#F3E675;
 }
 
 #services_slide a {
     text-decoration: none;
     color:#000;
     cursor: pointer;
+}
+
+.services_list {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.services_list div {
+    width: 45vw;
+    height: 22vh;
+    margin-bottom: 1vh;
+    margin-right: 1vw;
+    background-color: #E5F0F8;
+}
+
+#services_slide .services_list div p {
+    font-size: 10px;
+    background-color: transparent;
+    padding-top: 10px;
+}
+
+.services_list div img {
+    display: none;
 }
