@@ -1,7 +1,16 @@
 @media (width >= 1200px) {
+    #services_slide .services_list div{
+        overflow-y: hidden;
+        background-color: transparent;
+    }
     #services_slide .services_list div p {
         display: none;
     }
 
+    #services_slide .services_list div img {
+        display: block;
+        width: 140px;
+        margin: auto;
+    }
    
 }
