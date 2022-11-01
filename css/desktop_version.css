@@ -1,0 +1,7 @@
+@media (width >= 1200px) {
+    #services_slide .services_list div p {
+        display: none;
+    }
+
+   
+}
