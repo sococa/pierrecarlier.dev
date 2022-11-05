@@ -1,3 +1,11 @@
+@keyframes go_hover {
+    30% { transform: scale(1.2); }
+    40%, 60% { transform: scale(1.2); }
+    50% { transform: scale(1.2); }
+    70% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+} 
+
 #services_slide h2 {
     padding-bottom: 0;
 }
@@ -45,13 +53,7 @@
     height: 22vh;
     margin-bottom: 1vh;
     margin-right: 1vw;
-    background-color: #E5F0F8;
     overflow-y: scroll;
-}
-
-#services_slide .services_list div p {
-    background-color: transparent;
-    padding: 20px 20px 0 20px;
 }
 
 .services_list div img {
@@ -62,3 +64,39 @@
     display: none;
 }
 
+#services_slide .services_list div{
+    overflow-y: hidden;
+    overflow-x: hidden;  
+}
+
+#services_slide .services_list div img {
+    display: block;
+    width: 20vw;
+    margin: auto;
+    cursor: pointer;
+}
+
+#services_slide .services_list div .img1 {
+    animation: 3s go_hover ease infinite;
+    animation-play-state: running;
+}
+
+#services_slide .services_list div .img2 {
+    animation: 2s go_hover ease infinite;
+}
+
+#services_slide .services_list div .img3 {
+    animation: 5s go_hover ease infinite;
+}
+
+#services_slide .services_list div .img4 {
+    animation: 4s go_hover ease infinite;
+}
+
+#services_slide .services_list div .img5 {
+    animation: 6s go_hover ease infinite;
+}
+
+#services_slide .services_list div .img6 {
+    animation: 3s go_hover ease infinite;
+}    

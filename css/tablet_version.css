@@ -79,26 +79,4 @@
         margin: auto;
         max-width: 1200px;
     }
-
-    #services_slide .services_list div p  {
-        font-size: 16px;
-        padding-right: clamp(10px, 2vw, 4vw);
-        padding-left: clamp(10px, 2vw, 4vw);
-    }
-
-    .services_list {
-        margin: auto;
-        margin-top: 30px;
-        width: 80vw;
-        max-width: 1200px;
-    }
-
-    .services_list div {
-        width: 36vw;
-        max-width: 550px;
-        height: 22vh;
-        margin-bottom: 1vh;
-        margin-right: 1vw;
-        background-color: #E5F0F8;
-    }
 }

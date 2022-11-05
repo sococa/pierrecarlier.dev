@@ -1,39 +1,18 @@
-#my_work_slide {
+.my_work_slide img {
+    width: 44vw;
+    max-width: 220px;
+    max-height: 33vh;
+    margin: 2px;
+}
+
+.my_work_slide_next {
     padding-top: 50px;
 }
 
-#my_work_slide h2{
-    background-color: #E5F0F8;
-    margin-right: -4vw;
-    margin-left: -4vw;
-    padding-top: 30px;
-    padding-bottom: 0;
-}
-
-#my_work_slide .title_color_white {
-    color: #fff;
-}
-
-.my_work_nav {
+.my_work_presentation {
     display: flex;
-    justify-content: space-around;
-    background-color: #E5F0F8;
-    margin-right: -4vw;
-    margin-left: -4vw;
-    padding-bottom: 25px;
-    padding-top: 25px;
-}
-
-.my_work_nav button {
-    font-size: 12px;
-    color: #28375C;
-    background-color: #fff;
-    border: none;
-    padding: 5px;
-}
-
-.my_work_nav button:focus {
-    color: #fff;
-    background-color: #28375C;
-    border: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
 }

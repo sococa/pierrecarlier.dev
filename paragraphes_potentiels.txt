@@ -1,0 +1,16 @@
+<p class="paragraphe1">I create your website from A to Z. Depending on your model,your desires and
+                        your needs.</p>
+
+<p class="paragraphe2">I create your web application from A to Z. It will be available on the web store</p>
+
+<p class="paragraphe3">CMS | Framework, code optimized for natural referencing. I make sure that
+                        your site is the best placed in Google searches.</p>
+
+<p class="paragraphe4">Websites require regular maintenance. Updates, verifications, improvements,
+                        change of content... I take care of everything.</p>
+
+<p class="paragraphe5">I can clean up and make better the design, performances and seo of your
+                        website.</p>
+
+<p class="paragraphe6">I make the user experience and user interface the best thought out. The more
+                        consistent this is, the more enjoyable your site navigation is.</p>
