@@ -78,12 +78,18 @@
         font-size: clamp(24px, 20vw, 32px);
     }
 
+    .my_work_slide {
+        height: 100vh;
+    }
+
     .my_work_presentation img {
         width: 30vw;
         max-width: 200px;
         margin-top: 0px;
         margin-bottom: -4px;
     }
+
+
 
     form {
         width: 80vw;

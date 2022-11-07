@@ -2,6 +2,7 @@
     .my_work_slide {
         padding-right: 8vw;
         padding-left: 8vw;
+        height: 160vh;
     }
    
     .my_work_presentation .appear_on_hover {
@@ -39,7 +40,7 @@
 
     .my_work_presentation img {
         width: 35vw;
-        max-width: 250px;
+        max-width: 400px;
         margin-top: 0px;
         margin-bottom: -4px;
     }
