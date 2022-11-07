@@ -6,11 +6,6 @@
     h1{
         font-size: clamp(36px, 5vw, 58px)
     }
-
-    h2 {
-        font-size: 4em;
-    }
-
     .hide_space {
         display:contents
     }    
@@ -72,6 +67,13 @@
         height: 300px;
         position: relative;
         left: 70px;
+    }
+
+    .my_work_presentation img {
+        width: 30vw;
+        max-width: 300px;
+        margin-top: 0px;
+        margin-bottom: -4px;
     }
 
     #contact_slide {
