@@ -20,7 +20,8 @@ form {
     display:flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 95vh;
+    height: 60vh;
+    margin-bottom: 5vh;
 }
 
 form input {
