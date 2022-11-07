@@ -51,6 +51,11 @@
         width: 100vw;
     }
 
+    #about_slide p {
+        width: 45vw;
+        font-size: clamp(16px, 2vw, 20px);
+    }
+
     #about_slide .title_color_white {
         color: #ffffff;
     }    
@@ -67,6 +72,10 @@
         height: 300px;
         position: relative;
         left: 70px;
+    }
+    
+    #about_slide ul li {
+        font-size: clamp(24px, 20vw, 32px);
     }
 
     .my_work_presentation img {

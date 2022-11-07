@@ -17,8 +17,21 @@
         width: 35vw;
     }
 
-    #about_slide .aboutme_description {
-        padding-right: 2vw;
-        padding-left: 2vw;
+    #about_slide p {
+        width: 40vw;
+        font-size: clamp(16px, 2vw, 22px);
+        text-align: center;
+    }
+
+    #about_slide ul {
+        width: 45vw;
+        margin-top: -30px;
+        height: 400px;
+        position: relative;
+        left: 70px;
+    }
+
+    .services_list div {
+        width: clamp(100px, 30vw, 550px);
     }
 }

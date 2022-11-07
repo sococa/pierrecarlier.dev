@@ -13,7 +13,7 @@
 #services_slide h3 {
     font-family: 'abril_fatface','nunito_sans', Verdana, Tahoma, sans-serif;
     text-transform: uppercase;
-    font-size: clamp(14px, 3vw, 20px);
+    font-size: clamp(12px, 3vw, 20px);
     background-repeat: no-repeat;
     background-position: right;
     padding-top: 10px;
@@ -46,32 +46,19 @@
     text-align: center;
     justify-content: center;
     margin-top: 30px;
+    height: 80vh;
 }
 
 .services_list div {
-    width: 45vw;
-    height: 22vh;
+    width: clamp(100px, 30vw, 300px);
     margin-bottom: 1vh;
     margin-right: 1vw;
-    overflow-y: scroll;
-}
-
-.services_list div img {
-    display: none;
-}
-
-#services_slide .services_list div img {
-    display: none;
-}
-
-#services_slide .services_list div{
-    overflow-y: hidden;
-    overflow-x: hidden;  
+    overflow: none;
 }
 
 #services_slide .services_list div img {
     display: block;
-    width: 20vw;
+    width: clamp(80px, 18vw, 300px);
     margin: auto;
     cursor: pointer;
 }

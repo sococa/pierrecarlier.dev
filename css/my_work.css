@@ -25,7 +25,7 @@
     transform: translate(-50%, -50%);
     color: #fff;
     padding: 20px;
-    background-color: rgba(40,55,92,0.7);
+    background-color: rgba(0,0,0,0.7);
 }
 
 .my_work_presentation img {
@@ -41,12 +41,12 @@
 }
 
 .my_work_presentation .appear_on_hover p {
-    font-size: clamp(6px, 4vw, 16px)
+    font-size: clamp(6px, 4vw, 22px)
 }
 
 .my_work_presentation .appear_on_hover a {
     color: #fff;
-    font-size: clamp(6px, 4vw, 16px)
+    font-size: clamp(6px, 4vw, 22px)
 
 }
 
