@@ -1,260 +1,410 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>PierreCarlier.dev</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css" />
-    <title>PierreCarlier.dev</title>
-</head>
+	<body>
+		<header>
+			<nav>
+				<a class="nav_item displayed" href="#about_slide">about me</a>
+				<a class="nav_item" href="#my_work_slide_anchor">my work</a>
+				<a class="nav_item" href="#services_slide">services</a>
+				<a class="nav_item" href="#contact_slide">contact</a>
+			</nav>
+		</header>
 
-<body>
-    <header>
-        <nav>
-            <a class="nav_item displayed" href="#about_slide">about me</a>
-            <a class="nav_item" href="#my_work_slide_anchor">my work</a>
-            <a class="nav_item" href="#services_slide">services</a>
-            <a class="nav_item" href="#contact_slide">contact</a>
-        </nav>
-    </header>
+		<div class="container">
+			<div class="slider_bloc first_slide">
+				<div class="first_part">
+					<h1>
+						Hi, I’m <span class="yellow_highlight">Pierre,<br /></span
+						><span class="yellow_highlight">Web Developer.</span>
+					</h1>
+					<div class="logos_container">
+						<img
+							class="first_slide_logos"
+							src="images\logos\html.webp"
+							alt="html_logo"
+							title="html"
+						/>
+						<img
+							class="first_slide_logos"
+							src="images\logos\css.webp"
+							alt="css_logo"
+							title="css"
+						/>
+						<img
+							class="first_slide_logos"
+							src="images\logos\javascript.webp"
+							alt="javascript_logo"
+							title="javascript"
+						/>
+						<img
+							class="first_slide_logos"
+							src="images\logos\react.webp"
+							alt="react_logo"
+							title="react"
+						/>
+						<img
+							class="first_slide_logos"
+							src="images\logos\node.webp"
+							alt="node_logo"
+							title="node"
+						/>
+						<img
+							class="first_slide_logos"
+							src="images\logos\SQL.webp"
+							alt="sql_logo"
+							title="sql"
+						/>
+						<img
+							class="first_slide_logos"
+							src="images\logos\wordpress.webp"
+							alt="wordpress_logo"
+							title="wordpress"
+						/>
+					</div>
+					<a href="#my_work_slide_anchor">
+						<button>see my work</button>
+					</a>
+				</div>
+				<img
+					src="images\first_slide_photo.webp"
+					alt="photo_of_me"
+					class="first_slide_photo"
+				/>
+			</div>
+			<div class="slider_bloc_nico">
+				<div class="relative" id="about_slide" data-id="0">
+					<h2>
+						About<span class="hide_space"></span
+						><span class="title_color_white"> me</span>
+					</h2>
+					<div class="content_nico">
+						<div class="about_me_description">
+							<p>
+								<span>Curious</span> and eager for knowledge, the profession of
+								web developer logically presented itself to me in 2020. It's
+								with <span>enthusiasm</span> and <span>conviction</span> that I
+								have completed my retraining in this field.
+								<br />
+								I am a <span>pragmatic</span> developer who favors
+								<span>efficiency and consistency</span>. Web development is a
+								technique. To have an <span>effective</span> site or
+								application, the technique used must be good.
+							</p>
+						</div>
+						<div class="about_me_skills">
+							<ul>
+								<li>Enthusiastic</li>
+								<li>Meticulous</li>
+								<li>Curious</li>
+								<li>Collaborative</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
 
-    <div class="container">
-        <div class="slider_bloc first_slide">
-            <div class="first_part">
-                <h1>Hi, I’m <span class="yellow_highlight">Pierre,<br></span><span class="yellow_highlight">Web
-                        Developer.</span></h1>
-                <div class="logos_container">
-                    <img class="first_slide_logos" src="images\logos\html.webp" alt="html_logo" title="html">
-                    <img class="first_slide_logos" src="images\logos\css.webp" alt="css_logo" title="css">
-                    <img class="first_slide_logos" src="images\logos\javascript.webp" alt="javascript_logo"
-                        title="javascript">
-                    <img class="first_slide_logos" src="images\logos\react.webp" alt="react_logo" title="react">
-                    <img class="first_slide_logos" src="images\logos\node.webp" alt="node_logo" title="node">
-                    <img class="first_slide_logos" src="images\logos\SQL.webp" alt="sql_logo" title="sql">
-                    <img class="first_slide_logos" src="images\logos\wordpress.webp" alt="wordpress_logo"
-                        title="wordpress">
-                </div>
-                <a href="#my_work_slide_anchor">
-                    <button>see my work</button>
-                </a>
-            </div>
-            <img src="images\first_slide_photo.webp" alt="photo_of_me" class="first_slide_photo">
-        </div>
+			<div
+				class="slider_bloc my_work_slide"
+				id="my_work_slide_anchor"
+				data-id="1"
+			>
+				<h2>My <span class="title_color_white">work</span></h2>
+				<div class="my_work_presentation">
+					<div class="container_for_hover">
+						<img
+							src="images\my_work\wolfgang.webp"
+							alt="mniature du site wolfgang.freecluster.eu/"
+						/>
+						<div class="appear_on_hover">
+							<p>Site vitrine pour un vendeur de motos fictif</p>
+							<a href="http://wolfgang.freecluster.eu/" target="_blank"
+								>Visiter le site</a
+							>
+							<div>
+								<img src="images\logos\html.webp" alt="logo du langage html" />
+								<img src="images\logos\css.webp" alt="logo du langage CSS" />
+							</div>
+						</div>
+					</div>
 
-        <div class="slider_bloc" id="about_slide" data-id=0>
-            <h2>About<span class="hide_space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="title_color_white">
-                    me</span></h2>
-            <div class="aboutme_content">
-                <div class="aboutme_description">
-                    <p>
-                        <span>Curious</span> and eager for knowledge, the profession of web developer logically
-                        presented
-                        itself to me in 2020. It's with <span>enthusiasm</span> and <span>conviction</span> that I have
-                        completed my retraining in this field.
-                    </p>
-                    <p>
-                        I am a <span>pragmatic</span> developer who favors <span>efficiency and consistency</span>. Web
-                        development is a technique. To have an <span>effective</span> site or application, the technique
-                        used must be good.
-                    </p>
-                </div>
-                <ul>
-                    <li>Enthusiastic</li>
-                    <li>Meticulous</li>
-                    <li>Curious</li>
-                    <li>Collaborative</li>
-                </ul>
-            </div>
+					<div class="container_for_hover">
+						<img
+							src="images\my_work\john_doe.webp"
+							alt="miniature du site johndoe.freecluster.eu/"
+						/>
+						<div class="appear_on_hover">
+							<p>Site portfolio fictif</p>
+							<a href="http://johndoe.freecluster.eu/" target="_blank"
+								>Visiter le site</a
+							>
+							<div>
+								<img src="images\logos\html.webp" alt="logo du langage html" />
+								<img src="images\logos\css.webp" alt="logo du langage CSS" />
+							</div>
+						</div>
+					</div>
 
-        </div>
+					<div class="container_for_hover">
+						<img
+							src="images\my_work\les_intrepides.webp"
+							alt="miniature du site les-intrepides.com/"
+						/>
+						<div class="appear_on_hover">
+							<p>Site vitrine pour une micro-crèche</p>
+							<a href="http://les-intrepides.com/" target="_blank"
+								>Visiter le site</a
+							>
+							<div>
+								<img
+									src="images\logos\wordpress.webp"
+									alt="logo du cms wordpress"
+								/>
+								<img src="images\logos\css.webp" alt="logo du langage css" />
+								<img
+									src="images\logos\javascript.webp"
+									alt="logo du langage javascript"
+								/>
+							</div>
+						</div>
+					</div>
 
-        <div class="slider_bloc my_work_slide" id="my_work_slide_anchor" data-id=1>
-            <h2>My <span class="title_color_white">work</span></h2>
-            <div class="my_work_presentation">
+					<div class="container_for_hover">
+						<img
+							src="images\my_work\cup_of_tea.webp"
+							alt="miniature du site cupoftea.freecluster.eu/"
+						/>
+						<div class="appear_on_hover">
+							<p>Site vitrine pour un vendeur de thé fictif</p>
+							<a href="http://cupoftea.freecluster.eu/" target="_blank"
+								>Visiter le site</a
+							>
+							<div>
+								<img src="images\logos\html.webp" alt="logo du langage html" />
+								<img src="images\logos\css.webp" alt="logo du langage CSS" />
+							</div>
+						</div>
+					</div>
 
-                <div class="container_for_hover">
-                    <img src="images\my_work\wolfgang.webp" alt="mniature du site wolfgang.freecluster.eu/">
-                    <div class="appear_on_hover">
-                        <p>Site vitrine pour un vendeur de motos fictif</p>
-                        <a href="http://wolfgang.freecluster.eu/" target="_blank"><span>Visiter le site</span></a>
-                        <div>
-                            <img src="images\logos\html.webp" alt="logo du langage html">
-                            <img src="images\logos\css.webp" alt="logo du langage CSS">
-                        </div>
-                    </div>
-                </div>
+					<div class="container_for_hover">
+						<img
+							src="images\my_work\mascarades.webp"
+							alt="miniature du site lespetitesmascarades.com/"
+						/>
+						<div class="appear_on_hover">
+							<p>Site vitrine pour un organisateur d'évenements pour enfants</p>
+							<a href="https://lespetitesmascarades.com/" target="_blank"
+								>Visiter le site</a
+							>
+							<div>
+								<img
+									src="images\logos\wordpress.webp"
+									alt="logo du langage wordpress"
+								/>
+								<img src="images\logos\css.webp" alt="logo du langage css" />
+								<img
+									src="images\logos\javascript.webp"
+									alt="logo du langage javascript"
+								/>
+							</div>
+						</div>
+					</div>
 
-                <div class="container_for_hover">
-                    <img src="images\my_work\john_doe.webp" alt="miniature du site johndoe.freecluster.eu/">
-                    <div class="appear_on_hover">
-                        <p>Site portfolio fictif</p>
-                        <a href="http://johndoe.freecluster.eu/" target="_blank"><span>Visiter le site</span></a>
-                        <div>
-                            <img src="images\logos\html.webp" alt="logo du langage html">
-                            <img src="images\logos\css.webp" alt="logo du langage CSS">
-                        </div>
-                    </div>
-                </div>
+					<div class="container_for_hover">
+						<img
+							src="images\my_work\green_office.webp"
+							alt="miniature du site green-office.infinityfreeapp.com/"
+						/>
+						<div class="appear_on_hover">
+							<p><span>Site vitrine pour un vendeur de thé fictif</span></p>
+							<a href="http://green-office.infinityfreeapp.com/" target="_blank"
+								>Visiter le site</a
+							>
+							<div>
+								<img src="images\logos\html.webp" alt="logo du langage html" />
+								<img src="images\logos\css.webp" alt="logo du langage CSS" />
+							</div>
+						</div>
+					</div>
 
-                <div class="container_for_hover">
-                    <img src="images\my_work\les_intrepides.webp" alt="miniature du site les-intrepides.com/">
-                    <div class="appear_on_hover">
-                        <p>Site vitrine pour une micro-crèche</p>
-                        <a href="http://les-intrepides.com/" target="_blank"><span>Visiter le site</span></a>
-                        <div>
-                            <img src="images\logos\wordpress.webp" alt="logo du cms wordpress">
-                            <img src="images\logos\css.webp" alt="logo du langage css">
-                            <img src="images\logos\javascript.webp" alt="logo du langage javascript">
-                        </div>
-                    </div>
-                </div>
+					<div class="container_for_hover">
+						<img
+							src="images\my_work\marvel_quiz.webp"
+							alt="miniature du site marvel-quiz-mu.vercel.app/"
+						/>
+						<div class="appear_on_hover">
+							<p>Questionnaire sur l'univers Marvel</p>
+							<a href="https://marvel-quiz-mu.vercel.app/" target="_blank"
+								>Visiter le site</a
+							>
+							<div>
+								<img
+									src="images\logos\react.webp"
+									alt="logo du langage react"
+								/>
+								<img src="images\logos\css.webp" alt="logo du langage CSS" />
+								<img
+									src="images\logos\firebase.webp"
+									alt="logo du service d'hébergement firebase"
+								/>
+							</div>
+						</div>
+					</div>
 
-                <div class="container_for_hover">
-                    <img src="images\my_work\cup_of_tea.webp" alt="miniature du site cupoftea.freecluster.eu/">
-                    <div class="appear_on_hover">
-                        <p>Site vitrine pour un vendeur de thé fictif</p>
-                        <a href="http://cupoftea.freecluster.eu/" target="_blank"><span>Visiter le site</span></a>
-                        <div>
-                            <img src="images\logos\html.webp" alt="logo du langage html">
-                            <img src="images\logos\css.webp" alt="logo du langage CSS">
-                        </div>
-                    </div>
-                </div>
+					<div class="container_for_hover">
+						<img
+							src="images\my_work\dmc.webp"
+							alt="miniature du site desmettre-maxime-canin.com"
+						/>
+						<div class="appear_on_hover">
+							<p>Site vitrine pour un éducateur canin</p>
+							<a href="https://desmettre-maxime-canin.com" target="_blank"
+								>Visiter le site</a
+							>
+							<div>
+								<img src="images\logos\html.webp" alt="logo du langage html" />
+								<img src="images\logos\css.webp" alt="logo du langage css" />
+								<img
+									src="images\logos\javascript.webp"
+									alt="logo du langage javascript"
+								/>
+								<img
+									src="images\logos\react.webp"
+									alt="logo de la librairie react"
+								/>
+								<img
+									src="images\logos\node.webp"
+									alt="logo de la librairie node"
+								/>
+								<img src="images\logos\SQL.webp" alt="logo du langage sql" />
+								<img
+									src="images\logos\mongoose.webp"
+									alt="logo du module mongoose"
+								/>
+							</div>
+						</div>
+					</div>
 
-                <div class="container_for_hover">
-                    <img src="images\my_work\mascarades.webp" alt="miniature du site lespetitesmascarades.com/">
-                    <div class="appear_on_hover">
-                        <p>Site vitrine pour un organisateur d'évenements pour enfants</p>
-                        <a href="https://lespetitesmascarades.com/" target="_blank"><span>Visiter le site</span></a>
-                        <div>
-                            <img src="images\logos\wordpress.webp" alt="logo du langage wordpress">
-                            <img src="images\logos\css.webp" alt="logo du langage css">
-                            <img src="images\logos\javascript.webp" alt="logo du langage javascript">
-                        </div>
-                    </div>
-                </div>
+					<div class="container_for_hover">
+						<img
+							src="images\my_work\zannekin.webp"
+							alt="miniature du site zannekin.beer"
+						/>
+						<div class="appear_on_hover">
+							<p>Site vitrine pour un brasseur de bière</p>
+							<a href="https://zannekin.beer/" target="_blank"
+								>Visiter le site</a
+							>
+							<div>
+								<img
+									src="images\logos\wordpress.webp"
+									alt="logo du cms wordpress"
+								/>
+								<img src="images\logos\css.webp" alt="logo du langage CSS" />
+								<img
+									src="images\logos\javascript.webp"
+									alt="logo du langage javascript"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-                <div class="container_for_hover">
-                    <img src="images\my_work\green_office.webp"
-                        alt="miniature du site green-office.infinityfreeapp.com/">
-                    <div class="appear_on_hover">
-                        <p>Site vitrine pour un vendeur de thé fictif</p>
-                        <a href="http://green-office.infinityfreeapp.com/" target="_blank"><span>Visiter le
-                                site</span></a>
-                        <div>
-                            <img src="images\logos\html.webp" alt="logo du langage html">
-                            <img src="images\logos\css.webp" alt="logo du langage CSS">
-                        </div>
-                    </div>
-                </div>
+			<div class="slider_bloc" id="services_slide" data-id="2">
+				<h2>My services</h2>
+				<p><a href="cv.pdf" download="cv">Download my cv</a></p>
+				<div class="services_list">
+					<div>
+						<img
+							src="images\illustrations\website_creation.webp"
+							alt="illustrations_of_website_creation"
+							class="illustrations_competences img1"
+						/>
+						<h3 class="test"><span>Websites creation</span></h3>
+					</div>
+					<div>
+						<img
+							src="images\illustrations\mobile_application.webp"
+							alt="illustrations_of_application_creation"
+							class="illustrations_competences img2"
+						/>
+						<h3><span>Web applications creation</span></h3>
+					</div>
+					<div>
+						<img
+							src="images\illustrations\seo.webp"
+							alt="illustrations_of_seo"
+							class="illustrations_competences img3"
+						/>
+						<h3><span>Search Engine Optimization</span></h3>
+					</div>
+					<div>
+						<img
+							src="images\illustrations\website_maintenance.webp"
+							alt="illustrations_of_web_maintenance"
+							class="illustrations_competences img4"
+						/>
+						<h3><span>Web maintenance</span></h3>
+					</div>
+					<div>
+						<img
+							src="images\illustrations\website_redesign.webp"
+							alt="illustrations_of_expertises"
+							class="illustrations_competences img5"
+						/>
+						<h3><span>Website redesign</span></h3>
+					</div>
+					<div>
+						<img
+							src="images\illustrations\ux_ui_design.webp"
+							alt="illustrations_of_ux_ui_design"
+							class="illustrations_competences img6"
+						/>
+						<h3><span>UX/UI Design</span></h3>
+					</div>
+				</div>
+			</div>
 
-                <div class="container_for_hover">
-                    <img src="images\my_work\marvel_quiz.webp" alt="miniature du site marvel-quiz-mu.vercel.app/">
-                    <div class="appear_on_hover">
-                        <p>Questionnaire sur l'univers Marvel</p>
-                        <a href="https://marvel-quiz-mu.vercel.app/" target="_blank"><span>Visiter le site</span></a>
-                        <div>
-                            <img src="images\logos\react.webp" alt="logo du langage react">
-                            <img src="images\logos\css.webp" alt="logo du langage CSS">
-                            <img src="images\logos\firebase.webp" alt="logo du service d'hébergement firebase">
-                        </div>
-                    </div>
-                </div>
+			<div class="slider_bloc" id="contact_slide" data-id="3">
+				<h2>Contact <span class="sky_blue">form</span></h2>
+				<p>Let's start a project together ! Don't hesitate to contact me.</p>
+				<form onsubmit="sendEmail()" method="post">
+					<input class="name" type="text" placeholder="name" required />
+					<input class="email" type="email" placeholder="Email" required />
+					<input class="subject" type="text" placeholder="Subject" required />
+					<textarea
+						class="message"
+						placeholder="Your message"
+						required
+					></textarea>
+					<input type="submit" value="submit" />
+				</form>
+				<div class="footer">
+					<div>
+						<a href="https://www.linkedin.com/in/pierre-carlier-809b80180/"
+							><img src="images\logos\linkedin.webp" alt="logo_linkedin"
+						/></a>
+						<a href="https://github.com/sococa"
+							><img src="images\logos\github.webp" alt="logo_github"
+						/></a>
+						<a href="tel:0603174143"
+							><img src="images\logos\phone.webp" alt="illustration_phone"
+						/></a>
+					</div>
+					<p>@2022 Pierre Carlier et Kimberly Sanchez, TOUS DROITS RESERVÉS</p>
+				</div>
+			</div>
+		</div>
 
-                <div class="container_for_hover">
-                    <img src="images\my_work\dmc.webp" alt="miniature du site desmettre-maxime-canin.com">
-                    <div class="appear_on_hover">
-                        <p>Site vitrine pour un éducateur canin</p>
-                        <a href="https://desmettre-maxime-canin.com" target="_blank"><span>Visiter le site</span></a>
-                        <div>
-                            <img src="images\logos\html.webp" alt="logo du langage html">
-                            <img src="images\logos\css.webp" alt="logo du langage css">
-                            <img src="images\logos\javascript.webp" alt="logo du langage javascript">
-                            <img src="images\logos\react.webp" alt="logo de la librairie react">
-                            <img src="images\logos\node.webp" alt="logo de la librairie node">
-                            <img src="images\logos\SQL.webp" alt="logo du langage sql">
-                            <img src="images\logos\mongoose.webp" alt="logo du module mongoose">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container_for_hover">
-                    <img src="images\my_work\zannekin.webp" alt="miniature du site zannekin.beer">
-                    <div class="appear_on_hover">
-                        <p>Site vitrine pour un brasseur de bière</p>
-                        <a href="https://zannekin.beer/" target="_blank"><span>Visiter le site</span></a>
-                        <div>
-                            <img src="images\logos\wordpress.webp" alt="logo du cms wordpress">
-                            <img src="images\logos\css.webp" alt="logo du langage CSS">
-                            <img src="images\logos\javascript.webp" alt="logo du langage javascript">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="slider_bloc" id="services_slide" data-id=2>
-            <h2>My services</h2>
-            <p><a href="cv.pdf" download="cv">Download my cv</a></p>
-            <div class="services_list">
-                <div>
-                    <img src="images\illustrations\website_creation.webp" alt="illustrations_of_website_creation"
-                        class="illustrations_competences img1">
-                    <h3 class="test"><span>Websites creation</span></h3>
-                </div>
-                <div>
-                    <img src="images\illustrations\mobile_application.webp" alt="illustrations_of_application_creation"
-                        class="illustrations_competences img2">
-                    <h3><span>Web applications creation</span></h3>
-                </div>
-                <div>
-                    <img src="images\illustrations\seo.webp" alt="illustrations_of_seo"
-                        class="illustrations_competences img3">
-                    <h3><span>Search Engine Optimization</span></h3>
-                </div>
-                <div>
-                    <img src="images\illustrations\website_maintenance.webp" alt="illustrations_of_web_maintenance"
-                        class="illustrations_competences img4">
-                    <h3><span>Web maintenance</span></h3>
-                </div>
-                <div>
-                    <img src="images\illustrations\website_redesign.webp" alt="illustrations_of_expertises"
-                        class="illustrations_competences img5">
-                    <h3><span>Website redesign</span></h3>
-                </div>
-                <div>
-                    <img src="images\illustrations\ux_ui_design.webp" alt="illustrations_of_ux_ui_design"
-                        class="illustrations_competences img6">
-                    <h3><span>UX/UI Design</span></h3>
-                </div>
-            </div>
-        </div>
-
-        <div class="slider_bloc" id="contact_slide" data-id=3>
-            <h2>Contact <span class="sky_blue">form</span></h2>
-            <p>Let's start a project together ! Don't hesitate to contact me.</p>
-            <form onsubmit="sendEmail()" method="post">
-                <input class="name" type="text" placeholder="name" required>
-                <input class="email" type="email" placeholder="Email" required>
-                <input class="subject" type="text" placeholder="Subject" required>
-                <textarea class="message" placeholder="Your message" required></textarea>
-                <input type="submit" value="submit">
-            </form>
-            <div class="footer">
-                <div>
-                    <a href="https://www.linkedin.com/in/pierre-carlier-809b80180/"><img
-                            src="images\logos\linkedin.webp" alt="logo_linkedin"></a>
-                    <a href="https://github.com/sococa"><img src="images\logos\github.webp" alt="logo_github"></a>
-                    <a href="tel:0603174143"><img src="images\logos\phone.webp" alt="illustration_phone"></a>
-                </div>
-                <p>@2022 Pierre Carlier et Kimberly Sanchez, TOUS DROITS RESERVÉS</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
-    <script src="scripts.js"></script>
-</body>
-
+		<!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+		<script src="scripts.js"></script>
+	</body>
 </html>

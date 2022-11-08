@@ -17,8 +17,9 @@
 }
 
 .first_slide_photo {
-	width: calc(100vw - 80px);
+	width: 100vw;
 	max-width: 400px;
+	position: none;
 	right: 0;
 }
 

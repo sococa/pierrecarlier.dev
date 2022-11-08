@@ -1,50 +1,65 @@
+.slider_bloc_nico {
+	height: 100vh;
+	scroll-snap-align: start;
+}
 
-#about_slide {
-    background: linear-gradient(to top, #E5F0F8 82%, white 15%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: none;
+.relative {
+	position: relative;
+}
+
+.content_nico {
+	display: flex;
+	width: calc(100vw - 15px);
+	height: 100vh;
+	flex-direction: column;
+}
+
+.about_me_skills {
+	background: #e5f0f8;
+}
+
+.about_me_description,
+.about_me_skills {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
 }
 
 #about_slide .aboutme_description {
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 30vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 30vh;
 }
 
 #about_slide p {
-    font-size: clamp(12px, 4vw, 16px);
-    width: clamp(255px, 80vw, 100vw);
+	font-size: clamp(12px, 4vw, 16px);
+	width: clamp(255px, 80vw, 100vw);
 }
 
 #aboutme_description span {
-    font-weight: 900;
-    color: #28375C;
+	font-weight: 900;
+	color: #28375c;
 }
 
 #about_slide ul {
-    display: flex;
-    flex-direction: column;
-    align-items:flex-end;
-    justify-content:space-around;
-    height: 30vh;
-    font-family: 'nunito_sans', Verdana, Tahoma, sans-serif;
-    margin-top: 8vh;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: space-around;
+	height: 30vh;
+	font-family: "nunito_sans", Verdana, Tahoma, sans-serif;
+	margin-top: 8vh;
 }
 
 #about_slide ul li {
-    list-style-type: none;
-    text-transform: uppercase;
-    margin-left: auto;
-    margin-right: auto;
-    color: #28375C;
-    font-size: 24px;
-    font-weight: 900;
-    background-image: linear-gradient( 
-        transparent 65%, 
-        #F3E675 60% 
-    );
+	list-style-type: none;
+	text-transform: uppercase;
+	margin-left: auto;
+	margin-right: auto;
+	color: #28375c;
+	font-size: 24px;
+	font-weight: 900;
+	background-image: linear-gradient(transparent 65%, #f3e675 60%);
 }

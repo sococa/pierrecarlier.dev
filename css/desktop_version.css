@@ -12,7 +12,6 @@
 
     .my_work_presentation .appear_on_hover a{
         display: none;
-        
     }
 
     .my_work_presentation .appear_on_hover img{
@@ -24,19 +23,15 @@
         color: #28375C;
     }
 
-    .my_work_presentation .appear_on_hover:hover p {
-        color: #000;
+    .my_work_presentation .appear_on_hover:hover p span{
+        color: #28375C;
+        background-color: #F0E675;
     }
 
     .my_work_presentation .appear_on_hover:hover a{
         display: block;
-        color: #28375C;
-        font-weight: 900;
+        color: #000;
         text-decoration: none;
-    }
-
-    .my_work_presentation .appear_on_hover:hover a span{
-        background-color: #F0E675;
     }
 
     .my_work_presentation .appear_on_hover:hover img{
