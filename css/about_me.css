@@ -1,21 +1,22 @@
-.slider_bloc_nico {
-	height: 100vh;
-	scroll-snap-align: start;
-}
 
 .relative {
 	position: relative;
 }
 
-.content_nico {
+#about_slide {
+	padding-right: 0vw;
+    padding-left: 0vw;
+}
+
+.about_me_content {
 	display: flex;
-	width: calc(100vw - 15px);
 	height: 100vh;
 	flex-direction: column;
 }
 
 .about_me_skills {
 	background: #e5f0f8;
+	height: 50vh;
 }
 
 .about_me_description,
@@ -30,12 +31,14 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	height: 30vh;
+	height: 50vh;
 }
 
 #about_slide p {
 	font-size: clamp(12px, 4vw, 16px);
-	width: clamp(255px, 80vw, 100vw);
+	width: clamp(255px, 90vw, 100vw);
+	text-align: center;
+	padding-bottom: 20px;
 }
 
 #aboutme_description span {
@@ -48,9 +51,8 @@
 	flex-direction: column;
 	align-items: flex-end;
 	justify-content: space-around;
-	height: 30vh;
+	height: 40vh;
 	font-family: "nunito_sans", Verdana, Tahoma, sans-serif;
-	margin-top: 8vh;
 }
 
 #about_slide ul li {

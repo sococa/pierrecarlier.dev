@@ -32,7 +32,7 @@
 	}
 
 	.first_slide_photo {
-		width: 50vw;
+		width: 40vw;
 		max-width: 600px;
 	}
 
@@ -62,23 +62,21 @@
 		color: #ffffff;
 	}
 
-	#about_slide .content_nico {
+	#about_slide .about_me_content {
 		display: flex;
 		flex-direction: row;
 	}
 
-	#about_slide .aboutme_description {
-		width: 45vw;
-		justify-content: none;
-		margin-bottom: 20vh;
+	.about_me_description, .about_me_skills {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 50vw;
 	}
 
-	#about_slide ul {
-		/* 	width: 45vw;
-		margin-top: -30px;
-		height: 300px;
-		position: relative;
-		left: 70px; */
+	.about_me_skills {
+		height: 100vh;
+		width: 50vw;
 	}
 
 	#about_slide ul li {
@@ -88,6 +86,10 @@
 	.my_work_slide {
 		height: 100vh;
 	}
+
+	.my_work_presentation {
+		max-width: 810px;
+	}	
 
 	.my_work_presentation img {
 		width: 30vw;

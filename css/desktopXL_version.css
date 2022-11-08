@@ -8,8 +8,8 @@
 	}
 
 	.first_slide_photo {
-		/* margin-bottom: 15vh; */
 		width: 35vw;
+		max-width: none;
 	}
 
 	#about_slide p {
@@ -18,13 +18,16 @@
 		text-align: center;
 	}
 
-	#about_slide ul {
-		/* 	width: 45vw;
-		margin-top: -30px;
-		height: 400px;
-		position: relative;
-		left: 70px; */
-	}
+	.my_work_presentation {
+        max-width: 1200px;
+    }
+   
+
+	.my_work_presentation img {
+        max-width: 300px;
+        margin-top: 0px;
+        margin-bottom: -4px;
+    }
 
 	.services_list div {
 		width: clamp(100px, 30vw, 550px);
