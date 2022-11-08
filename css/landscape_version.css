@@ -1,0 +1,38 @@
+@media (orientation: landscape) {
+    .first_slide {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    .first_slide_photo{
+        width: 50vw;
+    }
+    
+    h1 {
+        font-size: 32px;
+        text-align: left;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    .aboutme_content{
+        display: flex;
+    }
+
+    #about_slide p {
+        font-size: 12px;
+        width: 40vw;
+    }
+
+    #about_slide ul li {
+        font-size: 16px;
+    }
+
+    #services_slide .services_list div img {
+        display: block;
+        width: 10vw;
+        margin: auto;
+        cursor: pointer;
+    }
+    
+}
