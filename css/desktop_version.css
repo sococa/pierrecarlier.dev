@@ -6,36 +6,7 @@
     }
 
     .my_work_presentation {
-        max-width: 1000px;
-    }
-   
-    .my_work_presentation .appear_on_hover {
-        opacity: 1;
-        color: transparent;
-    }
-
-    .my_work_presentation .appear_on_hover a{
-        display: none;
-    }
-
-    .my_work_presentation .appear_on_hover img{
-        width: 0;
-    }
-
-    .my_work_presentation .appear_on_hover:hover {
-        background-color: rgba(255, 255, 255, 0.7);
-        color: #28375C;
-    }
-
-    .my_work_presentation .appear_on_hover:hover p span{
-        color: #28375C;
-        background-color: #F0E675;
-    }
-
-    .my_work_presentation .appear_on_hover:hover a{
-        display: block;
-        color: #000;
-        text-decoration: none;
+        max-width: 1200px;
     }
 
     .my_work_presentation .appear_on_hover:hover img{
@@ -47,5 +18,4 @@
         margin-top: 0px;
         margin-bottom: -4px;
     }
-
 }

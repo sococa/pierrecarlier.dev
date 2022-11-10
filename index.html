@@ -19,7 +19,7 @@
 		</header>
 
 		<div class="container">
-			<div class="slider_bloc first_slide">
+			<div class="slider_bloc first_slide" id="first_slide_anchor">
 				<div class="first_part">
 					<h1>
 						Hi, I’m <span class="yellow_highlight">Pierre,<br /></span
@@ -29,44 +29,50 @@
 						<img
 							class="first_slide_logos"
 							src="images\logos\html.webp"
-							alt="html_logo"
+							alt="logo of html language"
 							title="html"
 						/>
 						<img
 							class="first_slide_logos"
 							src="images\logos\css.webp"
-							alt="css_logo"
+							alt="logo of css language"
 							title="css"
 						/>
 						<img
 							class="first_slide_logos"
 							src="images\logos\javascript.webp"
-							alt="javascript_logo"
+							alt="logo of javascript language"
 							title="javascript"
 						/>
 						<img
 							class="first_slide_logos"
 							src="images\logos\react.webp"
-							alt="react_logo"
+							alt="logo of react librairy"
 							title="react"
 						/>
 						<img
 							class="first_slide_logos"
 							src="images\logos\node.webp"
-							alt="node_logo"
+							alt="logo of node platform"
 							title="node"
 						/>
 						<img
 							class="first_slide_logos"
 							src="images\logos\SQL.webp"
-							alt="sql_logo"
+							alt="logo of sql language"
 							title="sql"
 						/>
 						<img
 							class="first_slide_logos"
 							src="images\logos\wordpress.webp"
-							alt="wordpress_logo"
+							alt="logo of wordpress CMS"
 							title="wordpress"
+						/>
+						<img
+							class="first_slide_logos"
+							src="images\logos\bootstrap.webp"
+							alt="logo of bootstrap package"
+							title="bootstrap"
 						/>
 					</div>
 					<a href="#my_work_slide_anchor">
@@ -75,7 +81,7 @@
 				</div>
 				<img
 					src="images\first_slide_photo.webp"
-					alt="photo_of_me"
+					alt="photo of me"
 					class="first_slide_photo"
 				/>
 			</div>
@@ -110,45 +116,13 @@
 						</div>
 					</div>
 				</div>
+				<a href="#first_slide_anchor"><img id="arrow_go_to_top" src="images\arrow_top.webp" alt="flèche de renvoi vers le haut de page"></a>
+
 			</div>
 
 			<div class="slider_bloc my_work_slide" id="my_work_slide_anchor" data-id="1">
 				<h2>My <span class="title_color_white">work</span></h2>
 				<div class="my_work_presentation">
-					<div class="container_for_hover">
-						<img
-							src="images\my_work\wolfgang.webp"
-							alt="mniature du site wolfgang.freecluster.eu/"
-						/>
-						<div class="appear_on_hover">
-							<p>Site vitrine pour un vendeur de motos fictif</p>
-							<a href="http://wolfgang.freecluster.eu/" target="_blank"
-								>Visiter le site</a
-							>
-							<div>
-								<img src="images\logos\html.webp" alt="logo du langage html" />
-								<img src="images\logos\css.webp" alt="logo du langage CSS" />
-							</div>
-						</div>
-					</div>
-
-					<div class="container_for_hover">
-						<img
-							src="images\my_work\john_doe.webp"
-							alt="miniature du site johndoe.freecluster.eu/"
-						/>
-						<div class="appear_on_hover">
-							<p>Site portfolio fictif</p>
-							<a href="http://johndoe.freecluster.eu/" target="_blank"
-								>Visiter le site</a
-							>
-							<div>
-								<img src="images\logos\html.webp" alt="logo du langage html" />
-								<img src="images\logos\css.webp" alt="logo du langage CSS" />
-							</div>
-						</div>
-					</div>
-
 					<div class="container_for_hover">
 						<img
 							src="images\my_work\les_intrepides.webp"
@@ -157,12 +131,52 @@
 						<div class="appear_on_hover">
 							<p>Site vitrine pour une micro-crèche</p>
 							<a href="http://les-intrepides.com/" target="_blank"
-								>Visiter le site</a
+								><span>Visiter le site</span></a
 							>
 							<div>
 								<img
 									src="images\logos\wordpress.webp"
 									alt="logo du cms wordpress"
+								/>
+								<img src="images\logos\css.webp" alt="logo du langage css" />
+								<img
+									src="images\logos\javascript.webp"
+									alt="logo du langage javascript"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="container_for_hover">
+						<img
+							src="images\my_work\wolfgang.webp"
+							alt="mniature du site wolfgang.freecluster.eu/"
+						/>
+						<div class="appear_on_hover">
+							<p>Site vitrine pour un vendeur de motos fictif</p>
+							<a href="http://wolfgang.freecluster.eu/" target="_blank"
+								><span>Visiter le site</span></a
+							>
+							<div>
+								<img src="images\logos\html.webp" alt="logo du langage html" />
+								<img src="images\logos\css.webp" alt="logo du langage CSS" />
+							</div>
+						</div>
+					</div>
+
+					<div class="container_for_hover">
+						<img
+							src="images\my_work\mascarades.webp"
+							alt="miniature du site lespetitesmascarades.com/"
+						/>
+						<div class="appear_on_hover">
+							<p>Site vitrine pour un organisateur d'évenements pour enfants</p>
+							<a href="https://lespetitesmascarades.com/" target="_blank"
+								><span>Visiter le site</span></a
+							>
+							<div>
+								<img
+									src="images\logos\wordpress.webp"
+									alt="logo du langage wordpress"
 								/>
 								<img src="images\logos\css.webp" alt="logo du langage css" />
 								<img
@@ -181,7 +195,7 @@
 						<div class="appear_on_hover">
 							<p>Site vitrine pour un vendeur de thé fictif</p>
 							<a href="http://cupoftea.freecluster.eu/" target="_blank"
-								>Visiter le site</a
+								><span>Visiter le site</span></a
 							>
 							<div>
 								<img src="images\logos\html.webp" alt="logo du langage html" />
@@ -190,70 +204,7 @@
 						</div>
 					</div>
 
-					<div class="container_for_hover">
-						<img
-							src="images\my_work\mascarades.webp"
-							alt="miniature du site lespetitesmascarades.com/"
-						/>
-						<div class="appear_on_hover">
-							<p>Site vitrine pour un organisateur d'évenements pour enfants</p>
-							<a href="https://lespetitesmascarades.com/" target="_blank"
-								>Visiter le site</a
-							>
-							<div>
-								<img
-									src="images\logos\wordpress.webp"
-									alt="logo du langage wordpress"
-								/>
-								<img src="images\logos\css.webp" alt="logo du langage css" />
-								<img
-									src="images\logos\javascript.webp"
-									alt="logo du langage javascript"
-								/>
-							</div>
-						</div>
-					</div>
-
-					<div class="container_for_hover">
-						<img
-							src="images\my_work\green_office.webp"
-							alt="miniature du site green-office.infinityfreeapp.com/"
-						/>
-						<div class="appear_on_hover">
-							<p><span>Site vitrine pour un vendeur de thé fictif</span></p>
-							<a href="http://green-office.infinityfreeapp.com/" target="_blank"
-								>Visiter le site</a
-							>
-							<div>
-								<img src="images\logos\html.webp" alt="logo du langage html" />
-								<img src="images\logos\css.webp" alt="logo du langage CSS" />
-							</div>
-						</div>
-					</div>
-
-					<div class="container_for_hover">
-						<img
-							src="images\my_work\marvel_quiz.webp"
-							alt="miniature du site marvel-quiz-mu.vercel.app/"
-						/>
-						<div class="appear_on_hover">
-							<p>Questionnaire sur l'univers Marvel</p>
-							<a href="https://marvel-quiz-mu.vercel.app/" target="_blank"
-								>Visiter le site</a
-							>
-							<div>
-								<img
-									src="images\logos\react.webp"
-									alt="logo du langage react"
-								/>
-								<img src="images\logos\css.webp" alt="logo du langage CSS" />
-								<img
-									src="images\logos\firebase.webp"
-									alt="logo du service d'hébergement firebase"
-								/>
-							</div>
-						</div>
-					</div>
+					
 
 					<div class="container_for_hover">
 						<img
@@ -263,7 +214,7 @@
 						<div class="appear_on_hover">
 							<p>Site vitrine pour un éducateur canin</p>
 							<a href="https://desmettre-maxime-canin.com" target="_blank"
-								>Visiter le site</a
+								><span>Visiter le site</span></a
 							>
 							<div>
 								<img src="images\logos\html.webp" alt="logo du langage html" />
@@ -291,13 +242,30 @@
 
 					<div class="container_for_hover">
 						<img
+							src="images\my_work\green_office.webp"
+							alt="miniature du site green-office.infinityfreeapp.com/"
+						/>
+						<div class="appear_on_hover">
+							<p>Site vitrine pour une agence environnementale fictive</p>
+							<a href="http://green-office.infinityfreeapp.com/" target="_blank"
+								><span>Visiter le site</span></a
+							>
+							<div>
+								<img src="images\logos\html.webp" alt="logo du langage html" />
+								<img src="images\logos\css.webp" alt="logo du langage CSS" />
+							</div>
+						</div>
+					</div>
+
+					<div class="container_for_hover">
+						<img
 							src="images\my_work\zannekin.webp"
 							alt="miniature du site zannekin.beer"
 						/>
 						<div class="appear_on_hover">
 							<p>Site vitrine pour un brasseur de bière</p>
 							<a href="https://zannekin.beer/" target="_blank"
-								>Visiter le site</a
+								><span>Visiter le site</span></a
 							>
 							<div>
 								<img
@@ -312,6 +280,48 @@
 							</div>
 						</div>
 					</div>
+
+					<div class="container_for_hover">
+						<img
+							src="images\my_work\marvel_quiz.webp"
+							alt="miniature du site marvel-quiz-mu.vercel.app/"
+						/>
+						<div class="appear_on_hover">
+							<p>Questionnaire sur l'univers Marvel</p>
+							<a href="https://marvel-quiz-mu.vercel.app/" target="_blank"
+								><span>Visiter le site</span></a
+							>
+							<div>
+								<img
+									src="images\logos\react.webp"
+									alt="logo du langage react"
+								/>
+								<img src="images\logos\css.webp" alt="logo du langage CSS" />
+								<img
+									src="images\logos\firebase.webp"
+									alt="logo du service d'hébergement firebase"
+								/>
+							</div>
+						</div>
+					</div>
+
+					<div class="container_for_hover">
+						<img
+							src="images\my_work\john_doe.webp"
+							alt="miniature du site johndoe.freecluster.eu/"
+						/>
+						<div class="appear_on_hover">
+							<p>Site portfolio fictif</p>
+							<a href="http://johndoe.freecluster.eu/" target="_blank"
+								><span>Visiter le site</span></a
+							>
+							<div>
+								<img src="images\logos\html.webp" alt="logo du langage html" />
+								<img src="images\logos\css.webp" alt="logo du langage CSS" />
+							</div>
+						</div>
+					</div>
+										
 				</div>
 			</div>
 

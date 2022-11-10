@@ -8,7 +8,7 @@
 	}
 
 	.first_slide_photo {
-		width: 35vw;
+		width: 37vw;
 		max-width: none;
 	}
 
@@ -18,18 +18,17 @@
 		text-align: center;
 	}
 
-	.my_work_presentation {
-        max-width: 1200px;
-    }
-   
-
-	.my_work_presentation img {
-        max-width: 300px;
-        margin-top: 0px;
-        margin-bottom: -4px;
-    }
-
 	.services_list div {
 		width: clamp(100px, 30vw, 550px);
+	}
+
+	.my_work_presentation {
+        max-width: 1400px;
+    }
+
+	.my_work_presentation img {
+		max-width: 300px;
+		margin-top: 0px;
+		margin-bottom: -4px;
 	}
 }

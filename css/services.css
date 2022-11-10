@@ -60,7 +60,6 @@
     display: block;
     width: clamp(80px, 18vw, 300px);
     margin: auto;
-    cursor: pointer;
 }
 
 #services_slide .services_list div .img1 {

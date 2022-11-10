@@ -5,12 +5,13 @@
 .my_work_presentation {
 	display: flex;
 	flex-wrap: wrap;
+	align-content: flex-start;
 	justify-content: center; 
 	align-items:flex-start;
 	background-color: #fff;
 	gap: 5px;
 	max-width: 1250px;
-	margin: 0 auto;
+	margin: 0 auto; 
 }
 
 .my_work_presentation .container_for_hover {
@@ -28,12 +29,11 @@
 	font-family: "nunito_sans", Verdana, Tahoma, sans-serif;
 	top: 50%;
 	left: 50%;
-	width: 100%;
-	height: 100%;
+	width: 98%;
+	height: 98%;
 	transform: translate(-50%, -50%);
-	color: #fff;
 	padding: 20px;
-	background-color: rgba(0, 0, 0, 0.7);
+	transition: all 0.3s ease-out;
 }
 
 .my_work_presentation img {
@@ -45,17 +45,24 @@
 
 .my_work_presentation .appear_on_hover:hover {
 	opacity: 1;
+	background-color: rgba(255, 255, 255, 0.8);
+    color: #28375C;
 }
 
 .my_work_presentation .appear_on_hover p {
 	font-size: clamp(6px, 4vw, 22px);
+	font-weight: 600;
 }
 
 .my_work_presentation .appear_on_hover a {
-	color: #fff;
-	font-size: clamp(6px, 4vw, 22px);
+	display: block;
+	color: #000;
+	background-color: #F0E675;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 .my_work_presentation .appear_on_hover img {
 	width: 12%;
 }
+

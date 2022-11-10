@@ -21,6 +21,20 @@ body {
 	overflow-x: hidden;
 }
 
+@keyframes down{
+	0% {position:absolute; bottom:30px; opacity: 0}
+	50% {position:absolute; bottom:45px; opacity: 0.5}
+	100% {position:absolute; bottom:60px; opacity: 1}
+}
+
+#arrow_go_to_top {
+	position: fixed;
+	width: 30px;
+	right: 30px;
+	animation: down 1s infinite linear alternate;
+	cursor: pointer;
+}
+
 .hide_space {
 	display: none;
 }
