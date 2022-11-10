@@ -31,7 +31,7 @@
 		font-size: 18px;
 	}
 
-	.first_slide_photo {
+	#first_slide_photo {
 		width: 40vw;
 		max-width: 600px;
 	}

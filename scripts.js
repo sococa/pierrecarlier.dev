@@ -28,6 +28,23 @@ function handleObserver(entries, observer) {
     })
 }
 
+
+/* Gestion de la arrow_top */
+/* La flèche apparait quand la photo d'accueil n'est plus visible */
+var observer_arrow = new IntersectionObserver(function(entries) {
+    if(entries[0].isIntersecting === true){
+        document.getElementById("arrow_go_to_top").style.display = "none"
+    }
+    else {
+        document.getElementById("arrow_go_to_top").style.display = "block"
+    }
+}, { 
+    threshold: [1] 
+})
+
+observer_arrow.observe(document.querySelector("#first_slide_photo"))
+
+
 /* My work page */
 
 // let appearOnHover = document.querySelectorAll(".appear_on_hover");
