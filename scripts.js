@@ -42,37 +42,28 @@ var observer_arrow = new IntersectionObserver(function(entries) {
     threshold: [1] 
 })
 
-observer_arrow.observe(document.querySelector("#first_slide_photo"))
+observer_arrow.observe(document.querySelector("h1"))
 
-
-/* My work page */
-
-// let appearOnHover = document.querySelectorAll(".appear_on_hover");
-
-// document.getElementById("test").addEventListener(
-//     "click",
-//     function(){
-
-//     }
-// );
 
 /* smtp js */
-// function sendEmail(){
+/* SmtpJS.com - v3.0.0 */
+var Email = { send: function (a) { return new Promise(function (n, e) { a.nocache = Math.floor(1e6 * Math.random() + 1), a.Action = "Send"; var t = JSON.stringify(a); Email.ajaxPost("https://smtpjs.com/v3/smtpjs.aspx?", t, function (e) { n(e) }) }) }, ajaxPost: function (e, n, t) { var a = Email.createCORSRequest("POST", e); a.setRequestHeader("Content-type", "application/x-www-form-urlencoded"), a.onload = function () { var e = a.responseText; null != t && t(e) }, a.send(n) }, ajax: function (e, n) { var t = Email.createCORSRequest("GET", e); t.onload = function () { var e = t.responseText; null != n && n(e) }, t.send() }, createCORSRequest: function (e, n) { var t = new XMLHttpRequest; return "withCredentials" in t ? t.open(e, n, !0) : "undefined" != typeof XDomainRequest ? (t = new XDomainRequest).open(e, n) : t = null, t } };
+function sendEmail(){
 
-//     const email = document.getElementsByClassName('email')
-//     const message = document.getElementsByClassName('message')
-
-//     Email.send({
-//         Host: "smtp.elasticemail.com",
-//         Username: "pierrocarlier@gmail.com",
-//         Password: "DF3F9E88F1C9662578AA16EE8C6C6B7606C8",
-//         To: email.value,
-//         From: "pierrocarlier@gmail.com",
-//         Subject: "This is the subject",
-//         Body: message.value
-//     }).then(
-//         message => alert(message)
-//     )
-// }
+    const email = document.getElementsByClassName('email')
+    const message = document.getElementsByClassName('message')
+     
+    Email.send({
+         Host: "smtp.elasticemail.com",
+         Username: "pierrocarlier@gmail.com",
+         Password: "DF3F9E88F1C9662578AA16EE8C6C6B7606C8",
+         To: 'pierrocarlier@gmail.com',
+         From: "pierrocarlier@gmail.com",
+         Subject: "This is the subject",
+         Body:'message'
+     }).then(
+         message => alert(message)
+     )
+ }
 
 

@@ -1,4 +1,4 @@
-@media (width >= 767px) {
+@media (min-width : 767px) {
 	nav {
 		margin: 0 10vw 0 10vw;
 	}
@@ -15,7 +15,7 @@
 	}
 
 	.first_slide {
-		flex-direction: row;
+		-webkit-flex-direction: row;
 		text-align: start;
 		align-items: flex-end;
 		padding-left: 100px;

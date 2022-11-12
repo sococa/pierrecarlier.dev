@@ -22,9 +22,9 @@ body {
 }
 
 @keyframes down{
-	0% {position:absolute; bottom:30px; opacity: 0}
-	50% {position:absolute; bottom:45px; opacity: 0.5}
-	100% {position:absolute; bottom:60px; opacity: 1}
+	0% {position:absolute; bottom:2vh; opacity: 0}
+	50% {position:absolute; bottom:3vh; opacity: 0.5}
+	100% {position:absolute; bottom:4vh; opacity: 1}
 }
 
 #arrow_go_to_top {
