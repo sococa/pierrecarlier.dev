@@ -11,19 +11,35 @@
 	<body>
 		<header>
 			<nav>
-				<a class="nav_item displayed" href="#about_slide">about me</a>
-				<a class="nav_item" href="#my_work_slide_anchor">my work</a>
-				<a class="nav_item" href="#services_slide">services</a>
-				<a class="nav_item" href="#contact_slide">contact</a>
+				<a class="nav_item english_text" href="#about_slide">About me</a>
+				<a class="nav_item french_text" href="#about_slide">A propos</a>
+				<a class="nav_item english_text" href="#my_work_slide_anchor">My work</a>
+				<a class="nav_item french_text" href="#my_work_slide_anchor">Mon travail</a>
+				<a class="nav_item" href="#services_slide">Services</a>
+				<a class="nav_item" href="#contact_slide">Contact</a>
+				<fieldset>
+					<div>
+						<input type="radio" name="chose_language" id="english_selected" onclick="languageSelected()" value="english_selected" checked>
+						<label for="english_selected">English</label>    
+					</div>
+					<div>
+						<input type="radio" name="chose_language" id="french_selected" onclick="languageSelected()" value="french_selected">
+						<label for="french_selected">Français</label>     
+					</div>
+				</fieldset>
 			</nav>
 		</header>
 
 		<div class="container">
 			<div class="slider_bloc first_slide" id="first_slide_anchor">
 				<div class="first_part">
-					<h1>
+					<h1 class="english_text">
 						Hi, I’m <span class="yellow_highlight">Pierre,<br /></span
 						><span class="yellow_highlight">Web Developer.</span>
+					</h1>
+					<h1 class="french_text">
+						Bonjour, je suis <span class="yellow_highlight">Pierre,<br /></span
+						><span class="yellow_highlight">développeur web.</span>
 					</h1>
 					<div class="logos_container">
 						<img
@@ -84,6 +100,7 @@
 					alt="photo of me"
 					id="first_slide_photo"
 				/>
+				<p></p>
 			</div>
 			<div class="slider_bloc" id="about_slide" data-id="0">
 				<div class="relative" >
@@ -129,9 +146,9 @@
 							alt="miniature du site les-intrepides.com/"
 						/>
 						<div class="appear_on_hover">
-							<p>Site vitrine pour une micro-crèche</p>
+							<p>Showcase website for a micro-nursery</p>
 							<a href="http://les-intrepides.com/" target="_blank"
-								><span>Visiter le site</span></a
+								><span>Visit website</span></a
 							>
 							<div>
 								<img
@@ -152,9 +169,9 @@
 							alt="mniature du site wolfgang.freecluster.eu/"
 						/>
 						<div class="appear_on_hover">
-							<p>Site vitrine pour un vendeur de motos fictif</p>
+							<p>Showcase website for a fictitious motorcycle seller</p>
 							<a href="http://wolfgang.freecluster.eu/" target="_blank"
-								><span>Visiter le site</span></a
+								><span>Visit website</span></a
 							>
 							<div>
 								<img src="images\logos\html.webp" alt="logo du langage html" />
@@ -169,9 +186,9 @@
 							alt="miniature du site lespetitesmascarades.com/"
 						/>
 						<div class="appear_on_hover">
-							<p>Site vitrine pour un organisateur d'évenements pour enfants</p>
+							<p>Showcase website for an organizer of events for children</p>
 							<a href="https://lespetitesmascarades.com/" target="_blank"
-								><span>Visiter le site</span></a
+								><span>Visit website</span></a
 							>
 							<div>
 								<img
@@ -193,9 +210,9 @@
 							alt="miniature du site cupoftea.freecluster.eu/"
 						/>
 						<div class="appear_on_hover">
-							<p>Site pour un vendeur de thé fictif</p>
+							<p>Website for a fictional tea seller</p>
 							<a href="http://cupoftea.freecluster.eu/" target="_blank"
-								><span>Visiter le site</span></a
+								><span>Visit website</span></a
 							>
 							<div>
 								<img src="images\logos\html.webp" alt="logo du langage html" />
@@ -212,9 +229,9 @@
 							alt="miniature du site desmettre-maxime-canin.com"
 						/>
 						<div class="appear_on_hover">
-							<p>Site vitrine pour un éducateur canin</p>
+							<p>Showcase website for a dog trainer</p>
 							<a href="https://desmettre-maxime-canin.com" target="_blank"
-								><span>Visiter le site</span></a
+								><span>Visit website</span></a
 							>
 							<div>
 								<img src="images\logos\html.webp" alt="logo du langage html" />
@@ -246,9 +263,9 @@
 							alt="miniature du site green-office.infinityfreeapp.com/"
 						/>
 						<div class="appear_on_hover">
-							<p>Site vitrine pour une agence environnementale fictive</p>
+							<p>Showcase website for a fictitious environmental agency</p>
 							<a href="http://green-office.infinityfreeapp.com/" target="_blank"
-								><span>Visiter le site</span></a
+								><span>Visit website</span></a
 							>
 							<div>
 								<img src="images\logos\html.webp" alt="logo du langage html" />
@@ -263,9 +280,9 @@
 							alt="miniature du site zannekin.beer"
 						/>
 						<div class="appear_on_hover">
-							<p>Site vitrine pour un brasseur de bière</p>
+							<p>Showcase website for a beer brewer</p>
 							<a href="https://zannekin.beer/" target="_blank"
-								><span>Visiter le site</span></a
+								><span>Visit website</span></a
 							>
 							<div>
 								<img
@@ -287,9 +304,9 @@
 							alt="miniature du site marvel-quiz-mu.vercel.app/"
 						/>
 						<div class="appear_on_hover">
-							<p>Questionnaire sur l'univers Marvel</p>
+							<p>Marvel Universe Quiz</p>
 							<a href="https://marvel-quiz-mu.vercel.app/" target="_blank"
-								><span>Visiter le site</span></a
+								><span>Visit website</span></a
 							>
 							<div>
 								<img
@@ -311,9 +328,9 @@
 							alt="miniature du site johndoe.freecluster.eu/"
 						/>
 						<div class="appear_on_hover">
-							<p>Site portfolio fictif</p>
+							<p>Fictitious portfolio website</p>
 							<a href="http://johndoe.freecluster.eu/" target="_blank"
-								><span>Visiter le site</span></a
+								><span>Visit website</span></a
 							>
 							<div>
 								<img src="images\logos\html.webp" alt="logo du langage html" />
@@ -383,12 +400,12 @@
 			<div class="slider_bloc" id="contact_slide" data-id="3">
 				<h2>Contact <span class="sky_blue">form</span></h2>
 				<p>Let's start a project together ! Don't hesitate to contact me.</p>
-				<form onsubmit="sendEmail()" method="post">
-					<input class="name" type="text" placeholder="name" required />
-					<input class="email" type="email" placeholder="Email" required />
-					<input class="subject" type="text" placeholder="Subject" required />
+				<form method="post" action="formulaire.php">
+					<input name="name" type="text" placeholder="name" required />
+					<input name="email" type="email" placeholder="Email" required />
+					<input name="subject" type="text" placeholder="Subject" required />
 					<textarea
-						class="message"
+						name="message"
 						placeholder="Your message"
 						required
 					></textarea>

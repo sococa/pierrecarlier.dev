@@ -58,6 +58,10 @@ nav a {
 	color: #000;
 }
 
+.french_text {
+	display: none;
+}
+
 .container {
 	height: 100vh;
 	overflow-y: scroll;
