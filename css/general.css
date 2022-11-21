@@ -27,6 +27,27 @@ body {
 	100% {position:absolute; bottom:4vh; opacity: 1}
 }
 
+fieldset {
+	border: none;
+}
+
+fieldset input {
+	transform: scale(0, 0);
+	cursor: pointer;
+}
+
+
+#flags_of_languages img{
+	width: 20px;
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+#flags_of_languages img:active{
+	opacity: 1;
+	width: 22px;
+}
+
 #arrow_go_to_top {
 	position: fixed;
 	width: 40px;
