@@ -24,6 +24,7 @@ const underline = id => {
 
 function handleObserverForNavbar(entries, observerForNavbar) {
     entries.forEach(entry => {
+        id++;
         entry.isIntersecting && underline(entry.target.dataset.id);
     })
 }
@@ -47,32 +48,46 @@ observerForArrow.observe(document.querySelector(".first_part"))
 
 /* Version anglaise ou française */
 let frenchSelected = document.getElementById('french_selected')
+let englishSelected = document.getElementById('english_selected')
 
-let frenchText = document.getElementsByClassName('french_text')
-let englishText = document.getElementsByClassName('english_text')
+let frenchText = document.querySelectorAll('.french_text')
+let englishText = document.querySelectorAll('.english_text')
 
 let frenchFlagImg = document.getElementById('french_flag_img')
 let englishFlagImg = document.getElementById('english_flag_img')
 
 function languageSelected() {
-    let n = -1
+    let n = 0;
     while (n < frenchText.length || n < englishText.length) {
-        n++
+        
         if(frenchSelected.checked === true) {
-            frenchText[n].style.display = "block"
-            englishText[n].style.display = "none"
+            frenchText[n].style.display = "block";
+            englishText[n].style.display = "none";
 
-            frenchFlagImg.style.display = "none"
-            englishFlagImg.style.display = "block"
+            frenchFlagImg.style.display = "none";
+            englishFlagImg.style.display = "block";
+            
+            n++;
         }
         else {
-            englishText[n].style.display = "block"
-            frenchText[n].style.display = "none"
+            englishText[n].style.display = "block";
+            frenchText[n].style.display = "none";
 
-            englishFlagImg.style.display = "none"
-            frenchFlagImg.style.display = "block"
+            englishFlagImg.style.display = "none";
+            frenchFlagImg.style.display = "block";
+
+            n++;
         }
     }
+}
+
+if(englishSelected.checked === true){
+    frenchFlagImg.style.display = "block";
+    englishFlagImg.style.display = "none";
+}
+else{
+    frenchFlagImg.style.display = "none";
+    englishFlagImg.style.display = "block";
 }
 
 if(englishSelected.checked === true){
