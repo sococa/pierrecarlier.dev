@@ -24,7 +24,6 @@ const underline = id => {
 
 function handleObserverForNavbar(entries, observerForNavbar) {
     entries.forEach(entry => {
-        id++;
         entry.isIntersecting && underline(entry.target.dataset.id);
     })
 }
