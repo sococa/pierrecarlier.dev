@@ -8,6 +8,10 @@
     padding-left: 0vw;
 }
 
+#about_slide h2 {
+	padding-bottom: 10px;
+}
+
 .about_me_content {
 	display: flex;
 	height: 100vh;
@@ -61,7 +65,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	color: #28375c;
-	font-size: 24px;
+	font-size: clamp(16px, 4vw, 24px);
 	font-weight: 900;
 	background-image: linear-gradient(transparent 65%, #f3e675 60%);
 }

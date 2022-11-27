@@ -60,6 +60,7 @@
 	background-color: #F0E675;
 	text-decoration: none;
 	cursor: pointer;
+	font-size : clamp(6px, 4vw, 22px)
 }
 
 .my_work_presentation .appear_on_hover img {
