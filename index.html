@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="css/style.css" />
 	<title>PierreCarlier.dev</title>
+
 </head>
 
 <body>
@@ -212,17 +213,19 @@
 				</div>
 
 				<div class="container_for_hover">
-					<img src="images\my_work\ila_yoga.webp" alt="miniature du site https://ila-yoga.vercel.app/" />
+					<img src="images\my_work\circle_products.webp"
+						alt="miniature du site https://circle-products.vercel.app/" />
 					<div class="appear_on_hover">
-						<p class="english_text">Showcase website for a fictitious yoga trainer</p>
-						<p class="french_text">Site vitrine pour une professeure de yoga fictive</p>
-						<a href="https://ila-yoga.vercel.app/" target="_blank">
+						<p class="english_text">fictional product management website</p>
+						<p class="french_text">Site de gestion de produits fictif</p>
+						<a href="https://circle-products.vercel.app/" target="_blank">
 							<span class="english_text">Visit website</span>
 							<span class="french_text">Visiter le site</span>
 						</a>
 						<div>
-							<img src="images\logos\html.webp" alt="logo du langage html" />
-							<img src="images\logos\css.webp" alt="logo du langage CSS" />
+							<img src="images\logos\react.webp" alt="logo du langage react" />
+							<img src="images\logos\sass.webp" alt="logo du compilateur sass" />
+							<img src="images\logos\fakestore.webp" alt="logo de l'api Fakestore" />
 						</div>
 					</div>
 				</div>
@@ -262,11 +265,11 @@
 				</div>
 
 				<div class="container_for_hover">
-					<img src="images\my_work\john_doe.webp" alt="miniature du site https://john-ef9qpwmt8-sococa.vercel.app/" />
+					<img src="images\my_work\ila_yoga.webp" alt="miniature du site https://ila-yoga.vercel.app/" />
 					<div class="appear_on_hover">
-						<p class="english_text">Fictitious portfolio website</p>
-						<p class="french_text">Site portfolio fictif</p>
-						<a href="https://john-ef9qpwmt8-sococa.vercel.app/" target="_blank">
+						<p class="english_text">Showcase website for a fictitious yoga trainer</p>
+						<p class="french_text">Site vitrine pour une professeure de yoga fictive</p>
+						<a href="https://ila-yoga.vercel.app/" target="_blank">
 							<span class="english_text">Visit website</span>
 							<span class="french_text">Visiter le site</span>
 						</a>
@@ -276,6 +279,7 @@
 						</div>
 					</div>
 				</div>
+
 
 			</div>
 		</div>
@@ -330,13 +334,14 @@
 			<p class="english_text">Let's start a project together ! Don't hesitate to contact me.</p>
 			<p class="french_text">Démarrons un projet ensemble ! N'hésitez pas à me contacter.</p>
 
-			<form method="post" action="formulaire.php">
-				<input name="name" type="text" placeholder="name" required />
-				<input name="email" type="email" placeholder="Email" required />
-				<input name="subject" type="text" placeholder="Subject" required />
-				<textarea name="message" placeholder="Your message" required></textarea>
-				<input class="french_text" type="submit" value="Envoyer">
-				<input class="english_text" type="submit" value="Send">
+			<form id="contact-form">
+				<input id="name" type="text" placeholder="name" required />
+				<input id="email" type="email" placeholder="Email" required />
+				<input id="phone" type="tel" placeholder="Téléphone" required />
+				<input id="subject" type="text" placeholder="Subject" required />
+				<textarea id="message" placeholder="Your message" required></textarea>
+				<input class="french_text" type="submit" value="Envoyer" onclick='sendMail()'>
+				<input class="english_text" type="submit" value="Send" onclick='sendMail()'>
 			</form>
 			<div class="footer">
 				<div>
@@ -351,9 +356,14 @@
 			</div>
 		</div>
 	</div>
-
-	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+	</script>
 	<script src="scripts.js"></script>
+	<script type="text/javascript">
+		(function () {
+			emailjs.init(process.env.EMAILJS_API_KEY);
+		})();
+	</script>
 </body>
 
 </html>
