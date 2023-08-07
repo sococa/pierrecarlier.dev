@@ -126,8 +126,3 @@ p {
 .sky_blue {
 	color: #e5f0f8;
 }
-
-.logos_container {
-	display: flex;
-	justify-content: space-between;
-}
