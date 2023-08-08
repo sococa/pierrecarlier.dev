@@ -60,4 +60,12 @@
     display: flex;
     justify-content: space-between;
     margin: auto;
+	width: 100%;
+}
+
+.telMail2 {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	font-size: 12px;
 }
