@@ -1,6 +1,7 @@
 @media (min-width: 1200px) {
     .container {
-        overflow-y: hidden;
+        overflow-y: scroll;
+        overflow-x: hidden;
     }
 
     .my_work_slide {

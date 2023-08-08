@@ -88,7 +88,7 @@ nav a {
 
 .container {
 	height: 100vh;
-	overflow-y: scroll;
+	overflow: scroll;
 	scroll-snap-type: y mandatory;
 }
 
