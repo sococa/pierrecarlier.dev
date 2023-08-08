@@ -21,6 +21,13 @@
 
     .first_slide button{
         font-size: none;
+        gap:none;
+	    box-shadow: #e5f0f8 5px 5px 0px -3px, #28375c 5px 5px;
+        border:none;
+    }
+
+    .first_slide .btn_download{
+        box-shadow: #e5f0f8 -5px 5px 0px -3px, #28375c -5px 5px;
     }
 
     .buttons_home{
