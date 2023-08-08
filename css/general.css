@@ -129,7 +129,7 @@ p {
 
 .telMail {
 	position: absolute;
-	bottom: 1vh;
-	left: 1vw;
+	bottom: 5px;
+	left: 5px;
 	font-size: 12px;
 }

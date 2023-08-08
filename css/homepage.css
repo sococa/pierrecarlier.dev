@@ -59,6 +59,5 @@
 .buttons_home{
     display: flex;
     justify-content: space-between;
-    width: 95%;
     margin: auto;
 }
