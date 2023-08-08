@@ -35,10 +35,9 @@
 	color: #ffffff;
 	font-size: 14px;
 	padding: 8px 20px 8px 20px;
-	margin-top: 45px;
+	margin-top: 3vh;
 	box-shadow: none;
 	cursor: pointer;
-	gap:1.5em;
 }
 
 .first_slide button:active {
@@ -50,22 +49,23 @@
 	box-shadow: none;
 }
 
+.buttons_home{
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+	width: 100%;
+	gap:0.5em
+}
 
 .logos_container {
 	display: flex;
 	justify-content: space-between;
 }
 
-.buttons_home{
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-	width: 100%;
-}
 
 .telMail2 {
 	display: flex;
 	justify-content: center;
-	margin-top: 20px;
+	margin-top: 0px;
 	font-size: 12px;
 }

@@ -32,6 +32,7 @@
 
     .buttons_home{
         width: 95%;
+        gap:none;
     }
 
     .telMail {
