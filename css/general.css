@@ -126,3 +126,10 @@ p {
 .sky_blue {
 	color: #e5f0f8;
 }
+
+.telMail {
+	position: absolute;
+	bottom: 1vh;
+	left: 1vw;
+	font-size: 12px;
+}
