@@ -1,14 +1,14 @@
 .first_slide {
-	background-color: #e5f0f8;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-around;
-	padding-top: 12vh;
-	text-align: center;
-	position: relative;
+    background-color: #e5f0f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 1em;
+    padding-top: 12vh;
+    text-align: center;
+    position: relative;
 }
-
 .first_slide .yellow_highlight {
 	background-image: linear-gradient(transparent 65%, #f3e675 60%);
 	background-size: 90% 100%;

@@ -25,6 +25,7 @@
 
     .first_slide{
         justify-content: space-between;
+        gap:none;
     }
 
     .first_slide button{
