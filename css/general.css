@@ -123,6 +123,7 @@ p {
 	font-family: "nunito_sans", Verdana, Tahoma, sans-serif;
 	-webkit-touch-callout: none; /* Empêche la détection automatique des numéros de téléphone */
     text-decoration: none; /* Supprime le soulignement (au cas où) */
+	user-select: none;
 }
 
 .sky_blue {
