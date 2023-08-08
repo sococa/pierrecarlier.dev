@@ -1,4 +1,8 @@
 @media (min-width: 1200px) {
+    .container {
+        overflow-y: hidden;
+    }
+
     .my_work_slide {
         padding-right: 8vw;
         padding-left: 8vw;
@@ -17,6 +21,10 @@
         max-width: 250px;
         margin-top: 0px;
         margin-bottom: -4px;
+    }
+
+    .first_slide{
+        justify-content: space-between;
     }
 
     .first_slide button{
