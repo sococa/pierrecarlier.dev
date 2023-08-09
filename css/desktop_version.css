@@ -61,4 +61,8 @@
     .telMail2{
         display: none;
     }
+
+    .services_list div {
+        width: 25%;
+    }
 }
