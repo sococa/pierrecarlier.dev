@@ -1,107 +1,121 @@
 @keyframes go_hover {
-    30% { transform: scale(1.2); }
-    40%, 60% { transform: scale(1.2); }
-    50% { transform: scale(1.2); }
-    70% { transform: scale(1.2); }
-    100% { transform: scale(1); }
-} 
+  30% {
+    transform: scale(1.2);
+  }
+  40%,
+  60% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  70% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
 #services_slide h2 {
-    padding-bottom: 0;
+  padding-bottom: 0;
 }
 
 #services_slide h3 {
-    font-family: 'abril_fatface','nunito_sans', Verdana, Tahoma, sans-serif;
-    text-transform: uppercase;
-    font-size: clamp(12px, 3vw, 20px);
-    background-repeat: no-repeat;
-    background-position: right;
-    padding-top: 10px;
-    color: #28375C;
-    margin: 0 10% 0 10%;
+  font-family: "abril_fatface", "nunito_sans", Verdana, Tahoma, sans-serif;
+  text-transform: uppercase;
+  font-size: clamp(12px, 3vw, 20px);
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-top: 10px;
+  color: #28375c;
+  margin: auto;
 }
 
 #services_slide h3 span {
-    background-image: linear-gradient( transparent 65%, #F3E675 60% );
+  background-image: linear-gradient(transparent 65%, #f3e675 60%);
 }
 
 #services_slide p {
-    font-size: 12px;
-    margin: auto;
-    text-align: center;
+  font-size: 12px;
+  margin: auto;
+  text-align: center;
 }
 
 #services_slide a {
-    text-decoration: none;
-    background-color:#F3E675;
-    padding: 0 5px 0 5px;
-    color:#000;
-    width: 110px;
-    cursor: pointer;
+  text-decoration: none;
+  background-color: #f3e675;
+  padding: 0 5px 0 5px;
+  color: #000;
+  width: 110px;
+  cursor: pointer;
 }
 
 .services_list {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-    margin-top: 30px;
-    height: 70vh;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  margin-top: 30px;
+  height: 70vh;
 }
 
 .services_list div {
-    display: flex;
-    align-items: center;
-    width: 48%;
-    margin-bottom: 1vh;
-    margin-right: 1vw;
-    overflow: none;
+  display: flex;
+  align-items: center;
+  width: 48%;
+  margin-bottom: 1vh;
+  margin-right: 1vw;
+  overflow: none;
 }
 
-.bg_services_websites_creation{
-    background: center / contain no-repeat url("../images/illustrations/website_creation.webp");
-    animation: 3s go_hover ease infinite;
-    animation-play-state: running;
+.bg_services_websites_creation {
+  background: center / contain no-repeat
+    url("../images/illustrations/website_creation.webp");
+  animation: 3s go_hover ease infinite;
+  animation-play-state: running;
 }
 
-.bg_services_applications_creation{
-    background: center / contain no-repeat url("../images/illustrations/mobile_application.webp");
-    animation: 2s go_hover ease infinite;
+.bg_services_applications_creation {
+  background: center / contain no-repeat
+    url("../images/illustrations/mobile_application.webp");
+  animation: 2s go_hover ease infinite;
 }
 
-.bg_services_seo{
-    background: center / contain no-repeat url("../images/illustrations/seo.webp");
-    animation: 5s go_hover ease infinite;
-
+.bg_services_seo {
+  background: center / contain no-repeat url("../images/illustrations/seo.webp");
+  animation: 5s go_hover ease infinite;
 }
 
 .bg_services_maintenance {
-    background: center / contain no-repeat url("../images/illustrations/maintenance.webp");
-    animation: 4s go_hover ease infinite;
-
+  background: center / contain no-repeat
+    url("../images/illustrations/maintenance.webp");
+  animation: 4s go_hover ease infinite;
 }
 
 .bg_services_redesign {
-    background: center / contain no-repeat url("../images/illustrations/redesign.webp");
-    animation: 6s go_hover ease infinite;
-
+  background: center / contain no-repeat
+    url("../images/illustrations/redesign.webp");
+  animation: 6s go_hover ease infinite;
 }
 
 .bg_services_ux_ui_design {
-    background: center / contain no-repeat url("../images/illustrations/ux_ui_design.webp");
-    animation: 3s go_hover ease infinite;
-    position: relative;
-    margin-left: 0;
+  background: center / contain no-repeat
+    url("../images/illustrations/ux_ui_design.webp");
+  animation: 3s go_hover ease infinite;
+  position: relative;
+  margin-left: 0;
 }
 
-.bg_services_ux_ui_design h3 span{
-    position: absolute; /* postulat de départ */
-    top: 50%; left: 50%; /* à 50%/50% du parent référent */
-    transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+.bg_services_ux_ui_design h3 span {
+  position: absolute; /* postulat de départ */
+  top: 50%;
+  left: 50%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
 }
 
 #services_slide .services_list div img {
-    display: block;
-    width: clamp(80px, 18vw, 300px);
-    margin: auto;
+  display: block;
+  width: clamp(80px, 18vw, 300px);
+  margin: auto;
 }
