@@ -8,8 +8,6 @@
 .footer div {
     display: flex;
     justify-content: space-around;
-    padding-left: 35vw;
-    padding-right: 35vw;
     padding-top: 25px;
     padding-bottom: 15px;
     justify-content: center;

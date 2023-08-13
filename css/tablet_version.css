@@ -62,9 +62,7 @@
 
   .about_me_description,
   .about_me_skills {
-    display: flex;
     align-items: center;
-    justify-content: center;
     width: 50vw;
   }
 
