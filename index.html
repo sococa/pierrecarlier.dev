@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/style.css" />
-
+  <script src="config.js"></script>
   <title>PierreCarlier.dev</title>
 </head>
 
@@ -409,7 +409,7 @@
   <script src="scripts.js"></script>
   <script type="text/javascript">
     (function () {
-      emailjs.init(process.env.EMAILJS_API_KEY);
+      emailjs.init(EMAILJS_PUBLIC_KEY);
     })();
   </script>
 </body>

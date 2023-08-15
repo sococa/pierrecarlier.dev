@@ -1,5 +1,4 @@
-paragraphes_potentiels
 node_modules
-.env
 cv.pdf
 readme
+config.js

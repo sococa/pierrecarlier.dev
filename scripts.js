@@ -1,4 +1,3 @@
-
 /* Gestion du surlignage de la navbar */
 const navItems = document.querySelectorAll(".nav_item");
 let formerId = 0;
@@ -105,11 +104,14 @@ function sendMail(params) {
     email: document.getElementById("email").value,
     phone: document.getElementById("phone").value,
     subject: document.getElementById("subject").value,
-    message: document.getElementById("message").value
+    message: document.getElementById("message").value,
   };
 
-  emailjs.send("service_qy8hu6j", "template_z6lphgo", templateParams)
-  .then(function(res){
-    console.log("success", res.status)
-  })
+  emailjs
+    .send(EMAILJS_SERVICE_KEY, EMAILJS_TEMPLATE_KEY, templateParams)
+    .then(function (res) {
+      console.log("success", res.status);
+    });
+
+  alert("Message envoyé avec succès !");
 }
