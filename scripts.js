@@ -108,7 +108,7 @@ function sendMail(params) {
   };
 
   emailjs
-    .send(process.env.EMAILJS_SERVICE_KEY, process.env.EMAILJS_TEMPLATE_KEY, templateParams)
+    .send(EMAILJS_SERVICE_KEY, EMAILJS_TEMPLATE_KEY, templateParams)
     .then(function (res) {
       console.log("success", res.status);
     });
