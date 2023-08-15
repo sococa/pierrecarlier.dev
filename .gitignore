@@ -1,4 +1,4 @@
 node_modules
 cv.pdf
 readme
-config.js
+.env
