@@ -1,12 +1,14 @@
-@import 'general.css';
-@import 'intersection_observer.css';
-@import 'homepage.css';
-@import 'about_me.css';
-@import 'my_work.css';
-@import 'services.css';
-@import 'contact_form.css';
-@import 'footer.css';
+@import "general.css";
+@import "intersection_observer.css";
+@import "homepage.css";
+@import "about_me.css";
+@import "myWork/my_work.css";
+@import "myWork/pagination.css";
 
-@import 'tablet_version.css';
-@import 'desktop_version.css';
-@import 'desktopXL_version.css';
+@import "services.css";
+@import "contact_form.css";
+@import "footer.css";
+
+@import "tablet_version.css";
+@import "desktop_version.css";
+@import "desktopXL_version.css";

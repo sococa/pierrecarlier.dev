@@ -115,3 +115,7 @@ function sendMail(params) {
 
   alert("Message envoyé avec succès !");
 }
+
+/* Pagination */
+let numberPerPage = 6;
+let pageNumber = 1;

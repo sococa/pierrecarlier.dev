@@ -137,9 +137,8 @@
       <h2 class="french_text">
         Mon <span class="title_color_white">travail</span>
       </h2>
-      <div class="my_work_presentation">
-
-        <div class="container_for_hover">
+      <div class="my_work_presentation paginated_list">
+        <div class="container_for_hover paginated_items">
           <img src="images\my_work\pgo.webp" alt="miniature du site PointAndGo" />
           <div class="appear_on_hover">
             <p class="english_text">Carpool website</p>
@@ -332,6 +331,19 @@
           </div>
         </div>
       </div>
+      <nav class="pagination-container">
+        <button class="pagination-button" id="prev-button" aria-label="Previous page" title="Previous page">
+          &lt;
+        </button>
+
+        <div id="pagination-numbers">
+
+        </div>
+
+        <button class="pagination-button" id="next-button" aria-label="Next page" title="Next page">
+          &gt;
+        </button>
+      </nav>
     </div>
 
     <div class="slider_bloc" id="services_slide" data-id="2">
