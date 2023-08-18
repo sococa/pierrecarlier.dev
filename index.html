@@ -137,8 +137,8 @@
       <h2 class="french_text">
         Mon <span class="title_color_white">travail</span>
       </h2>
-      <div class="my_work_presentation paginated_list">
-        <div class="container_for_hover paginated_items">
+      <div class="my_work_presentation" id="paginated_list" data-current-page="1" aria-live="polite">
+        <li class="container_for_hover">
           <img src="images\my_work\pgo.webp" alt="miniature du site PointAndGo" />
           <div class="appear_on_hover">
             <p class="english_text">Carpool website</p>
@@ -161,9 +161,9 @@
               <img src="images\logos\vite.webp" alt="logo du plugin Vite" title="Vite" />
             </div>
           </div>
-        </div>
+        </li>
 
-        <div class="container_for_hover">
+        <li class="container_for_hover ">
           <img src="images\my_work\les_intrepides.webp" alt="miniature du site les-intrepides.com/" />
           <div class="appear_on_hover">
             <p class="english_text">Showcase website for a micro-nursery</p>
@@ -179,8 +179,9 @@
               <img src="images\logos\javascript.webp" alt="logo du langage javascript" title="Javascript" />
             </div>
           </div>
-        </div>
-        <div class="container_for_hover">
+        </li>
+
+        <li class="container_for_hover ">
           <img src="images\my_work\wolfgang.webp" alt="mniature du site https://wolfgang.vercel.app/" />
           <div class="appear_on_hover">
             <p class="english_text">
@@ -198,9 +199,9 @@
               <img src="images\logos\css.webp" alt="logo du langage CSS" title="css" />
             </div>
           </div>
-        </div>
+        </li>
 
-        <div class="container_for_hover">
+        <li class="container_for_hover">
           <img src="images\my_work\mascarades.webp" alt="miniature du site lespetitesmascarades.com" />
           <div class="appear_on_hover">
             <p class="english_text">
@@ -219,9 +220,9 @@
               <img src="images\logos\javascript.webp" alt="logo du langage javascript" title="javascript" />
             </div>
           </div>
-        </div>
+        </li>
 
-        <div class="container_for_hover">
+        <li class="container_for_hover">
           <img src="images\my_work\cup_of_tea.webp" alt="miniature du site https://cup-of-tea.vercel.app/" />
           <div class="appear_on_hover">
             <p class="english_text">Website for a fictional tea seller</p>
@@ -237,9 +238,9 @@
               <img src="images\logos\css.webp" alt="logo du langage CSS" title="css" />
             </div>
           </div>
-        </div>
+        </li>
 
-        <div class="container_for_hover">
+        <li class="container_for_hover">
           <img src="images\my_work\dmc.webp" alt="miniature du site desmettre-maxime-canin.com" />
           <div class="appear_on_hover">
             <p class="english_text">Showcase website for a dog trainer</p>
@@ -258,9 +259,9 @@
               <img src="images\logos\mongoose.webp" alt="logo du module mongoose" title="mongoose" />
             </div>
           </div>
-        </div>
+        </li>
 
-        <div class="container_for_hover">
+        <li class="container_for_hover">
           <img src="images\my_work\circle_products.webp" alt="miniature du site https://circle-products.vercel.app/" />
           <div class="appear_on_hover">
             <p class="english_text">fictional product management website</p>
@@ -275,9 +276,9 @@
               <img src="images\logos\fakestore.webp" alt="logo de l'api Fakestore" title="fakestoreapi" />
             </div>
           </div>
-        </div>
+        </li>
 
-        <div class="container_for_hover">
+        <li class="container_for_hover">
           <img src="images\my_work\zannekin.webp" alt="miniature du site zannekin.beer" />
           <div class="appear_on_hover">
             <p class="english_text">Showcase website for a beer brewer</p>
@@ -292,9 +293,9 @@
               <img src="images\logos\javascript.webp" alt="logo du langage javascript" title="javascript" />
             </div>
           </div>
-        </div>
+        </li>
 
-        <div class="container_for_hover">
+        <li class="container_for_hover">
           <img src="images\my_work\marvel_quiz.webp" alt="miniature du site marvel-quiz-mu.vercel.app/" />
           <div class="appear_on_hover">
             <p class="english_text">Marvel Universe Quiz</p>
@@ -309,9 +310,9 @@
               <img src="images\logos\firebase.webp" alt="logo du service d'hébergement firebase" title="firebase" />
             </div>
           </div>
-        </div>
+        </li>
 
-        <div class="container_for_hover">
+        <li class="container_for_hover">
           <img src="images\my_work\ila_yoga.webp" alt="miniature du site https://ila-yoga.vercel.app/" />
           <div class="appear_on_hover">
             <p class="english_text">
@@ -329,24 +330,25 @@
               <img src="images\logos\css.webp" alt="logo du langage CSS" title="css" />
             </div>
           </div>
-        </div>
+        </li>
+        <nav class="pagination_container">
+          <button class="pagination_button" id="prev_button" aria-label="Previous page" title="Previous page">
+            &lt;
+          </button>
+
+          <div id="pagination_numbers"> <!-- Affichage du nombre de pages -->
+
+          </div>
+
+          <button class="pagination_button" id="next_button" aria-label="Next page" title="Next page">
+            &gt;
+          </button>
+        </nav>
       </div>
-      <nav class="pagination-container">
-        <button class="pagination-button" id="prev-button" aria-label="Previous page" title="Previous page">
-          &lt;
-        </button>
 
-        <div id="pagination-numbers">
-
-        </div>
-
-        <button class="pagination-button" id="next-button" aria-label="Next page" title="Next page">
-          &gt;
-        </button>
-      </nav>
     </div>
 
-    <div class="slider_bloc" id="services_slide" data-id="2">
+    <div class=" slider_bloc" id="services_slide" data-id="2">
       <h2 class="english_text">My services</h2>
       <h2 class="french_text">Mes services</h2>
       <div class="services_list">
