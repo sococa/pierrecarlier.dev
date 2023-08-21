@@ -15,8 +15,7 @@
   display: flex;
   align-items: center;
   position: absolute;
-  bottom: 100px;
-  padding: 1rem 0;
+  bottom: 0px;
   justify-content: center;
   margin: auto;
 }
@@ -31,7 +30,8 @@
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 0.2rem;
-  color: #28375c;
+  color: black;
+  font-weight: 900;
 }
 
 .pagination_number:hover,
@@ -40,6 +40,6 @@
 }
 
 .pagination_number.active {
-  color: #fff;
-  background: #e5f0f8;
+  color: #28375c;
+  background: white;
 }

@@ -1,34 +1,35 @@
 @media (min-width: 1400px) {
-	p {
-		font-size: 20px;
-	}
+  p {
+    font-size: 20px;
+  }
 
-	h1 {
-		font-size: clamp(36px, 5vw, 72px);
-	}
+  h1 {
+    font-size: clamp(36px, 5vw, 72px);
+  }
 
-	#first_slide_photo {
-		width: 37vw;
-		max-width: none;
-	}
+  #first_slide_photo {
+    width: 37vw;
+    max-width: none;
+  }
 
-	#about_slide p {
-		width: 40vw;
-		font-size: clamp(16px, 2vw, 22px);
-		text-align: center;
-	}
+  #about_slide p {
+    width: 40vw;
+    font-size: clamp(16px, 2vw, 22px);
+    text-align: center;
+  }
 
-	.services_list div {
-		width: clamp(100px, 30vw, 550px);
-	}
+  .services_list div {
+    width: clamp(100px, 30vw, 550px);
+  }
 
-	.my_work_presentation {
-        max-width: 1400px;
-    }
+  .my_work_presentation {
+    max-width: 1400px;
+  }
 
-	.my_work_presentation img {
-		max-width: 300px;
-		margin-top: 0px;
-		margin-bottom: -4px;
-	}
+  .my_work_presentation img {
+    width: 23vw;
+    max-width: 380px;
+    margin-top: 0px;
+    margin-bottom: -4px;
+  }
 }

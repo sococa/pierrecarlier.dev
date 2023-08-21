@@ -1,68 +1,68 @@
 @media (min-width: 1200px) {
-    .container {
-        overflow-y: scroll;
-        overflow-x: hidden;
-    }
+  .container {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
 
-    .my_work_slide {
-        padding-right: 8vw;
-        padding-left: 8vw;
-        height: 166vh;
-    }
+  .my_work_slide {
+    padding-right: 8vw;
+    padding-left: 8vw;
+    height: 166vh;
+  }
 
-    .my_work_presentation {
-        max-width: 1200px;
-    }
+  .my_work_presentation {
+    max-width: 1200px;
+  }
 
-    .my_work_presentation .appear_on_hover:hover img{
-        width: 12%;
-    }
+  .my_work_presentation .appear_on_hover:hover img {
+    width: 12%;
+  }
 
-    .my_work_presentation img {
-        max-width: 250px;
-        margin-top: 0px;
-        margin-bottom: -4px;
-    }
+  .my_work_presentation img {
+    width: clamp(320px, 25vw, 350px);
+    margin-top: 0px;
+    margin-bottom: -4px;
+  }
 
-    .first_slide{
-        justify-content: space-between;
-        gap:none;
-    }
+  .first_slide {
+    justify-content: space-between;
+    gap: none;
+  }
 
-    .first_slide button{
-        font-size: none;
-        gap:none;
-	    box-shadow: #e5f0f8 5px 5px 0px -3px, #28375c 5px 5px;
-        border:none;
-    }
+  .first_slide button {
+    font-size: none;
+    gap: none;
+    box-shadow: #e5f0f8 5px 5px 0px -3px, #28375c 5px 5px;
+    border: none;
+  }
 
-    .first_slide .btn_download{
-        box-shadow: #e5f0f8 -5px 5px 0px -3px, #28375c -5px 5px;
-    }
+  .first_slide .btn_download {
+    box-shadow: #e5f0f8 -5px 5px 0px -3px, #28375c -5px 5px;
+  }
 
-    .buttons_home{
-        width: 95%;
-        gap:none;
-    }
+  .buttons_home {
+    width: 95%;
+    gap: none;
+  }
 
-    .telMail {
-        display: block;
-        position: absolute;
-        z-index: 100;
-        bottom: 5px;
-        left: 5px;
-        font-size: 12px;
-        background-color: white;
-        opacity: 0.7;
-        padding: 3px;
-        border-radius: 5px;
-    }
+  .telMail {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    bottom: 5px;
+    left: 5px;
+    font-size: 12px;
+    background-color: white;
+    opacity: 0.7;
+    padding: 3px;
+    border-radius: 5px;
+  }
 
-    .telMail2{
-        display: none;
-    }
+  .telMail2 {
+    display: none;
+  }
 
-    .services_list div {
-        width: 25%;
-    }
+  .services_list div {
+    width: 25%;
+  }
 }

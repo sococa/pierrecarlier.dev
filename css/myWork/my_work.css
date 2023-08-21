@@ -39,8 +39,7 @@
 }
 
 .my_work_presentation img {
-  width: 44vw;
-  max-width: 220px;
+  width: clamp(70px, 44vw, 220px);
   margin-top: 0px;
   margin-bottom: -4px;
 }
@@ -52,7 +51,7 @@
 }
 
 .my_work_presentation .appear_on_hover p {
-  font-size: clamp(6px, 4vw, 22px);
+  font-size: clamp(6px, 4vw,32px);
   font-weight: 600;
 }
 
