@@ -84,8 +84,7 @@
   }
 
   .my_work_presentation img {
-    width: 30vw;
-    max-width: 200px;
+    width: clamp(250px, 30vw, 320px);
     margin-top: 0px;
     margin-bottom: -4px;
   }
@@ -98,6 +97,6 @@
 
   .services_list {
     margin: 30px 0 0 0;
-	height: 70vh;
+    height: 70vh;
   }
 }
