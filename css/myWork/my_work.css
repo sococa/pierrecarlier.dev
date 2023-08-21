@@ -1,9 +1,5 @@
 @import "pagination.css";
 
-.my_work_slide {
-  height: 165vh;
-}
-
 .my_work_presentation {
   display: flex;
   flex-wrap: wrap;

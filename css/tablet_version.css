@@ -75,10 +75,6 @@
     font-size: clamp(24px, 20vw, 32px);
   }
 
-  .my_work_slide {
-    height: 110vh;
-  }
-
   .my_work_presentation {
     max-width: 1000px;
   }
