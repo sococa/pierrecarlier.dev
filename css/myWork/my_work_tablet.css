@@ -1,0 +1,11 @@
+@media (min-width: 767px) {
+  .my_work_presentation {
+    max-width: 1000px;
+  }
+
+  .my_work_presentation img {
+    width: clamp(250px, 30vw, 320px);
+    margin-top: 0px;
+    margin-bottom: -4px;
+  }
+}

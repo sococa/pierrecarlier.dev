@@ -1,0 +1,40 @@
+@media (min-width: 767px) {
+  #about_slide {
+    align-items: start;
+  }
+
+  #about_slide h2 {
+    position: absolute;
+    top: -17px;
+    width: 94vw;
+  }
+
+  #about_slide p {
+    width: 45vw;
+    font-size: clamp(16px, 2vw, 20px);
+  }
+
+  #about_slide .title_color_white {
+    color: #ffffff;
+  }
+
+  #about_slide .about_me_content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .about_me_description,
+  .about_me_skills {
+    align-items: center;
+    width: 50vw;
+  }
+
+  .about_me_skills {
+    height: 100vh;
+    width: 50vw;
+  }
+
+  #about_slide ul li {
+    font-size: clamp(24px, 20vw, 32px);
+  }
+}

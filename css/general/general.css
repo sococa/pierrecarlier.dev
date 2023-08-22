@@ -8,12 +8,12 @@
 
 @font-face {
   font-family: "nunito_sans";
-  src: url(../fonts/nunito/Nunito-VariableFont_wght.ttf);
+  src: url(../../fonts/nunito/Nunito-VariableFont_wght.ttf);
 }
 
 @font-face {
   font-family: "abril_fatface";
-  src: url(../fonts/abril_fatface/AbrilFatface.ttf);
+  src: url(../../fonts/abril_fatface/AbrilFatface.ttf);
 }
 
 body {

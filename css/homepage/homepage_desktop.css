@@ -1,25 +1,6 @@
 @media (min-width: 1200px) {
-  .container {
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
 
-
-  .my_work_presentation {
-    max-width: 1200px;
-  }
-
-  .my_work_presentation .appear_on_hover:hover img {
-    width: 12%;
-  }
-
-  .my_work_presentation img {
-    width: clamp(320px, 25vw, 350px);
-    margin-top: 0px;
-    margin-bottom: -4px;
-  }
-
-  .first_slide {
+.first_slide {
     justify-content: space-between;
     gap: none;
   }
@@ -55,9 +36,5 @@
 
   .telMail2 {
     display: none;
-  }
-
-  .services_list div {
-    width: 25%;
   }
 }

@@ -1,0 +1,7 @@
+@media (min-width: 1400px) {
+  #about_slide p {
+    width: 40vw;
+    font-size: clamp(16px, 2vw, 22px);
+    text-align: center;
+  }
+}

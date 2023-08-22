@@ -1,0 +1,5 @@
+@media (min-width: 1400px) {
+  .services_list div {
+    width: clamp(100px, 30vw, 550px);
+  }
+}

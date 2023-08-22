@@ -1,0 +1,71 @@
+
+.relative {
+  position: relative;
+}
+
+#about_slide {
+  padding-right: 0vw;
+  padding-left: 0vw;
+}
+
+#about_slide h2 {
+  padding-bottom: 10px;
+}
+
+.about_me_content {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.about_me_skills {
+  background: #e5f0f8;
+  height: 50vh;
+}
+
+.about_me_description,
+.about_me_skills {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  width: 100%;
+}
+
+#about_slide .aboutme_description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 50vh;
+}
+
+#about_slide p {
+  font-size: clamp(12px, 4vw, 16px);
+  width: clamp(255px, 90vw, 100vw);
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#aboutme_description span {
+  font-weight: 900;
+  color: #28375c;
+}
+
+#about_slide ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 40vh;
+  font-family: "nunito_sans", Verdana, Tahoma, sans-serif;
+}
+
+#about_slide ul li {
+  list-style-type: none;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+  color: #28375c;
+  font-size: clamp(16px, 4vw, 24px);
+  font-weight: 900;
+  background-image: linear-gradient(transparent 65%, #f3e675 60%);
+}

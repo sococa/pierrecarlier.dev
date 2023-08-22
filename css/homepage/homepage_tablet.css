@@ -1,0 +1,23 @@
+@media (min-width: 767px) {
+  .first_slide {
+    -webkit-flex-direction: row;
+    text-align: start;
+    align-items: flex-end;
+    padding-left: 100px;
+  }
+
+  .first_slide_logos {
+    width: 4vw;
+    max-width: 45px;
+  }
+
+  .first_slide button {
+    margin-bottom: 35vh;
+    font-size: 18px;
+  }
+
+  #first_slide_photo {
+    width: 40vw;
+    max-width: 600px;
+  }
+}
