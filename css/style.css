@@ -1,5 +1,8 @@
+@import "utils/intersection_observer.css";
+@import "utils/traduction.css";
+@import "utils/arrow_top.css";
+
 @import "general/general.css";
-@import "intersection_observer.css";
 @import "homepage/homepage.css";
 @import "aboutMe/about_me.css";
 @import "myWork/my_work.css";

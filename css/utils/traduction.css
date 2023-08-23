@@ -1,0 +1,26 @@
+fieldset {
+  border: none;
+}
+
+fieldset input {
+  transform: scale(0, 0);
+  cursor: pointer;
+}
+
+#flags_of_languages img {
+  width: 20px;
+  cursor: pointer;
+}
+
+#flags_of_languages img:active {
+  opacity: 1;
+  width: 22px;
+}
+
+.french_text {
+  display: none;
+}
+
+#english_flag_img {
+  display: none;
+}
