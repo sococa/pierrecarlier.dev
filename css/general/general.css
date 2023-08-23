@@ -85,18 +85,17 @@ h1 {
 }
 
 h2 {
-  height: 13vh;
+  height: 15vh;
   font-family: "abril_fatface", "nunito_sans", Verdana, Tahoma, sans-serif;
   font-size: clamp(28px, 10vw, 4em);
   text-align: center;
   padding-top: 6vh;
-  margin-top: 5px;
   color: #28375c;
   text-transform: uppercase;
 }
 
 .slide_content {
-  height: 87vh;
+  height: 85vh;
   justify-content: space-between;
 }
 
