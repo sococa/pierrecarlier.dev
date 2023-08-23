@@ -1,3 +1,7 @@
+h1 {
+  font-size: clamp(36px, 5vw, 58px);
+}
+
 .first_slide {
   background-color: #e5f0f8;
   display: flex;
@@ -14,6 +18,10 @@
   background-size: 90% 100%;
   background-repeat: no-repeat;
   background-position: right;
+}
+
+.first_part {
+  height: 40vh;
 }
 
 #first_slide_photo {
@@ -69,7 +77,7 @@
 .telMail2 {
   display: flex;
   justify-content: center;
-  margin-top: 0px;
+  margin-top: 10px;
   font-size: 12px;
   text-decoration: none;
 }
