@@ -4,7 +4,6 @@
 
 #paginated_list {
   position: relative;
-  height: 78vh;
 }
 
 #paginated_list li {
@@ -18,7 +17,7 @@
   position: absolute;
   bottom: 0px;
   justify-content: center;
-  margin: auto;
+  margin-bottom: 10px;
 }
 
 .pagination_number,

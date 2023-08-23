@@ -16,10 +16,6 @@
   flex-direction: column;
 }
 
-.about_me_description {
-  height: 35%;
-}
-
 .about_me_skills {
   background: #e5f0f8;
   height: 75%;
