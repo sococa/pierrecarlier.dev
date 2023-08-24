@@ -27,6 +27,7 @@ h1 {
 #first_slide_photo {
   width: calc(100vw - 80px);
   max-width: 400px;
+  max-height: 50vh;
   right: 0;
 }
 
