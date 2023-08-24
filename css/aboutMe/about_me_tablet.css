@@ -26,6 +26,7 @@
   .about_me_description,
   .about_me_skills {
     width: 50vw;
+    padding-bottom: initial;
   }
 
   .about_me_skills {
