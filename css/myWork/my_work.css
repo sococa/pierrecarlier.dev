@@ -10,6 +10,7 @@
   gap: 5px;
   max-width: 1250px;
   margin: 0 auto;
+  height: 80vh;
 }
 
 .my_work_presentation .container_for_hover {
@@ -38,6 +39,9 @@
   width: clamp(70px, 44vw, 180px);
   margin-top: 0px;
   margin-bottom: -4px;
+  width: 20vh;
+  height: 20vh;
+  object-fit: cover; /*  pour s'assurer que le contenu de l'image remplit le carré sans déformation */
 }
 
 .my_work_presentation .appear_on_hover:hover {
