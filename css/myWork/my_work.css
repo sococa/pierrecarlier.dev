@@ -30,7 +30,7 @@
   width: 98%;
   height: 98%;
   transform: translate(-50%, -50%);
-  padding: 20px;
+  padding: 5px;
   transition: all 0.3s ease-out;
 }
 
@@ -65,7 +65,7 @@
 }
 
 .my_work_presentation .website_illustration {
-  width: 20vh;
-  height: 20vh;
+  width: 18vh;
+  height: 18vh;
   object-fit: cover; /*  pour s'assurer que le contenu de l'image remplit le carré sans déformation */
 }

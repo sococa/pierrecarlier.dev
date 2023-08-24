@@ -11,8 +11,7 @@
   }
 
   .my_work_presentation .website_illustration {
-    width: auto;
     height: auto;
-    object-fit: auto; /*  pour s'assurer que le contenu de l'image remplit le carré sans déformation */
+    width: clamp(250px, 30vw, 320px);
   }
 }
