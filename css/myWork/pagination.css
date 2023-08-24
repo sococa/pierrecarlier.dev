@@ -14,7 +14,7 @@
   width: calc(100% - 2rem);
   display: flex;
   align-items: center;
-  position: absolute;
+  position: relative;
   bottom: 0px;
   justify-content: center;
   margin-bottom: 10px;
