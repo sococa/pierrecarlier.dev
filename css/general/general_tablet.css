@@ -3,14 +3,20 @@
     margin: 0 10vw 0 10vw;
   }
 
-  h1 {
-    font-size: clamp(36px, 5vw, 58px);
+  h2 {
+    height: none;
   }
+
   .hide_space {
     display: contents;
   }
 
   p {
     font-size: 18px;
+  }
+
+  .slide_content {
+    height: none;
+    justify-content: none;
   }
 }

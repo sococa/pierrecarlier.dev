@@ -56,7 +56,6 @@
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
-  height: 60vh;
   margin: 0 6vw 0 6vw;
 }
 
@@ -83,7 +82,8 @@
 }
 
 .bg_services_seo {
-  background: center / contain no-repeat url("../../images/illustrations/seo.webp");
+  background: center / contain no-repeat
+    url("../../images/illustrations/seo.webp");
   animation: 5s go_hover ease infinite;
 }
 

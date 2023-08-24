@@ -39,39 +39,12 @@ body {
   }
 }
 
-fieldset {
-  border: none;
-}
-
-fieldset input {
-  transform: scale(0, 0);
-  cursor: pointer;
-}
-
-#flags_of_languages img {
-  width: 20px;
-  cursor: pointer;
-}
-
-#flags_of_languages img:active {
-  opacity: 1;
-  width: 22px;
-}
-
-#arrow_go_to_top {
-  position: fixed;
-  width: 40px;
-  right: 2vw;
-  animation: down 1s infinite linear alternate;
-  cursor: pointer;
-  z-index: 1000;
-}
-
 .hide_space {
   display: none;
 }
 
 header nav {
+  height: 3vh;
   z-index: 100;
   display: flex;
   justify-content: space-around;
@@ -87,14 +60,6 @@ header nav {
 nav a {
   text-decoration: none;
   color: #000;
-}
-
-.french_text {
-  display: none;
-}
-
-#english_flag_img {
-  display: none;
 }
 
 .container {
@@ -120,14 +85,18 @@ h1 {
 }
 
 h2 {
+  height: 15vh;
   font-family: "abril_fatface", "nunito_sans", Verdana, Tahoma, sans-serif;
   font-size: clamp(28px, 10vw, 4em);
   text-align: center;
-  padding-top: 55px;
-  padding-bottom: 30px;
-  margin-top: 5px;
+  padding-top: 6vh;
   color: #28375c;
   text-transform: uppercase;
+}
+
+.slide_content {
+  height: 85vh;
+  justify-content: space-between;
 }
 
 p {
@@ -136,8 +105,4 @@ p {
 
 .sky_blue {
   color: #e5f0f8;
-}
-
-.telMail {
-  display: none;
 }

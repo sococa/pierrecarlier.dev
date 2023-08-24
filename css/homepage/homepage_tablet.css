@@ -16,8 +16,13 @@
     font-size: 18px;
   }
 
+  .first_part {
+    height: auto;
+  }
+
   #first_slide_photo {
     width: 40vw;
     max-width: 600px;
-  }
+    height: auto;
+    max-height: none;
 }
