@@ -7,5 +7,6 @@
     width: clamp(250px, 30vw, 320px);
     margin-top: 0px;
     margin-bottom: -4px;
+    height: auto;
   }
 }
