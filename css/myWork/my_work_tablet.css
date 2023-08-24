@@ -9,4 +9,10 @@
     margin-bottom: -4px;
     height: auto;
   }
+
+  .my_work_presentation .website_illustration {
+    width: auto;
+    height: auto;
+    object-fit: auto; /*  pour s'assurer que le contenu de l'image remplit le carré sans déformation */
+  }
 }

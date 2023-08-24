@@ -38,9 +38,6 @@
   width: clamp(70px, 44vw, 180px);
   margin-top: 0px;
   margin-bottom: -4px;
-  width: 20vh;
-  height: 20vh;
-  object-fit: cover; /*  pour s'assurer que le contenu de l'image remplit le carré sans déformation */
 }
 
 .my_work_presentation .appear_on_hover:hover {
@@ -65,4 +62,10 @@
 
 .my_work_presentation .appear_on_hover img {
   width: 12%;
+}
+
+.my_work_presentation .website_illustration {
+  width: 20vh;
+  height: 20vh;
+  object-fit: cover; /*  pour s'assurer que le contenu de l'image remplit le carré sans déformation */
 }
