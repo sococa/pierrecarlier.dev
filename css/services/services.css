@@ -1,21 +1,39 @@
-/* @keyframes go_hover {
-  30% {
-    transform: scale(1.2);
+/* Animation slider */
+/* 
+   ~4,3% par transition, nombre calculé pour un effet de fluidité et de même durée pour chaques transitions.
+
+   reste divisé par nb de pauses
+   74,2(%) / 6 ~ 12.4(%) par pause
+*/
+@keyframes slider_services {
+  0%,
+  14.2857% {
+    transform: translateX(0);
   }
-  40%,
-  60% {
-    transform: scale(1.2);
+  16.6667%,
+  30.9524% {
+    transform: translateX(-100%);
   }
-  50% {
-    transform: scale(1.2);
+  33.3333%,
+  48.5714% {
+    transform: translateX(-200%);
   }
-  70% {
-    transform: scale(1.2);
+  50%,
+  65.2381% {
+    transform: translateX(-300%);
+  }
+  66.6667%,
+  81.9048% {
+    transform: translateX(-400%);
+  }
+  83.3333%,
+  97.1429% {
+    transform: translateX(-500%);
   }
   100% {
-    transform: scale(1);
+    transform: translateX(-600%);
   }
-} */
+}
 
 #services_slide {
   position: relative;
@@ -23,11 +41,9 @@
 }
 
 #services_slide h2 {
-  position: absolute;
   width: 100vw;
   top: 0;
   right: 0;
-  color: whitesmoke;
 }
 
 #services_slide h3 {
@@ -39,6 +55,7 @@
   padding-top: 10px;
   color: #28375c;
   margin: auto;
+  width: 100vw;
 }
 
 #services_slide h3 span {
@@ -65,58 +82,64 @@
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
-  /* margin: 0 6vw 0 6vw; */
   padding-bottom: 6.5vh;
-  height: 100vh;
+  height: 85vh;
   background: red;
 }
 
 .services_list div {
   display: flex;
-  align-items: center;
-  width: 48%;
-  margin-bottom: 1vh;
-  margin-right: 1vw;
-  overflow: none;
 }
 
 .bg_services_websites_creation {
+  width: 100vw;
   background: center / contain no-repeat
     url("../../images/illustrations/website_creation.webp");
   animation: 3s go_hover ease infinite;
   animation-play-state: running;
+  background-color: blue;
 }
 
 .bg_services_applications_creation {
+  width: 100vw;
   background: center / contain no-repeat
     url("../../images/illustrations/mobile_application.webp");
   animation: 2s go_hover ease infinite;
+  background-color: pink;
 }
 
 .bg_services_seo {
+  width: 100vw;
   background: center / contain no-repeat
     url("../../images/illustrations/seo.webp");
   animation: 5s go_hover ease infinite;
+  background-color: green;
 }
 
 .bg_services_maintenance {
+  width: 100vw;
   background: center / contain no-repeat
     url("../../images/illustrations/maintenance.webp");
   animation: 4s go_hover ease infinite;
+  background-color: yellow;
 }
 
 .bg_services_redesign {
+  width: 100vw;
   background: center / contain no-repeat
     url("../../images/illustrations/redesign.webp");
   animation: 6s go_hover ease infinite;
+  background-color: brown;
 }
 
 .bg_services_ux_ui_design {
+  width: 100vw;
   background: center / contain no-repeat
     url("../../images/illustrations/ux_ui_design.webp");
   animation: 3s go_hover ease infinite;
   position: relative;
   margin-left: 0;
+  background-color: black;
 }
 
 .bg_services_ux_ui_design h3 span {
@@ -124,10 +147,23 @@
   top: 50%;
   left: 50%; /* à 50%/50% du parent référent */
   transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
-} */
+}
 
 #services_slide .services_list div img {
   display: block;
   width: clamp(80px, 18vw, 300px);
   margin: auto;
+}
+
+/*slider*/
+.slider_services {
+  display: flex;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.slider_services div {
+  width: 100%;
+  flex-shrink: 0;
+  animation: slider_services 12s infinite ease-in-out;
 }

@@ -116,7 +116,7 @@ function sendMail(params) {
   alert("Message envoyé avec succès !");
 }
 
-/* Pagination */
+/* Pagination my work */
 const paginationNumbers = document.getElementById("pagination_numbers");
 const paginatedList = document.getElementById("paginated_list");
 const listItems = paginatedList.querySelectorAll("li");
