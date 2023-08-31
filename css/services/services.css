@@ -1,4 +1,4 @@
-@keyframes go_hover {
+/* @keyframes go_hover {
   30% {
     transform: scale(1.2);
   }
@@ -15,10 +15,19 @@
   100% {
     transform: scale(1);
   }
+} */
+
+#services_slide {
+  position: relative;
+  padding: 0;
 }
 
 #services_slide h2 {
-  padding-bottom: 0;
+  position: absolute;
+  width: 100vw;
+  top: 0;
+  right: 0;
+  color: whitesmoke;
 }
 
 #services_slide h3 {
@@ -56,8 +65,10 @@
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
-  margin: 0 6vw 0 6vw;
+  /* margin: 0 6vw 0 6vw; */
   padding-bottom: 6.5vh;
+  height: 100vh;
+  background: red;
 }
 
 .services_list div {
@@ -113,7 +124,7 @@
   top: 50%;
   left: 50%; /* à 50%/50% du parent référent */
   transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
-}
+} */
 
 #services_slide .services_list div img {
   display: block;
