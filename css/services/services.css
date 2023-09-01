@@ -49,11 +49,11 @@
 #services_slide h3 {
   font-family: "abril_fatface", "nunito_sans", Verdana, Tahoma, sans-serif;
   text-transform: uppercase;
-  font-size: clamp(12px, 4vw, 24px);
+  font-size: clamp(12px, 4vw, 54px);
   background-repeat: no-repeat;
   background-position: right;
   padding-top: 10px;
-  color: #28375c;
+  color: white;
   margin: auto;
   width: 100vw;
 }
@@ -82,8 +82,7 @@
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
-  height: 85vh;
-  background: red;
+  height: 75vh;
 }
 
 .services_list div {
@@ -91,54 +90,51 @@
 }
 
 .bg_services_websites_creation {
-  width: 100vw;
-  background: center / contain no-repeat
-    url("../../images/illustrations/website_creation.webp");
+  background: center / 50% no-repeat
+    url("../../images/illustrations/website_creation.svg");
   animation: 3s go_hover ease infinite;
   animation-play-state: running;
-  background-color: blue;
+  background-color: #648181;
 }
 
 .bg_services_applications_creation {
-  width: 100vw;
-  background: center / contain no-repeat
-    url("../../images/illustrations/mobile_application.webp");
+  background: center / 50% no-repeat
+    url("../../images/illustrations/mobile_application.svg");
   animation: 2s go_hover ease infinite;
-  background-color: pink;
+  background-color: #cfdac6;
 }
 
 .bg_services_seo {
   width: 100vw;
-  background: center / contain no-repeat
-    url("../../images/illustrations/seo.webp");
+  background: center / 50% no-repeat url("../../images/illustrations/seo.svg");
   animation: 5s go_hover ease infinite;
-  background-color: green;
+  background-color: #e8b665;
 }
 
 .bg_services_maintenance {
   width: 100vw;
-  background: center / contain no-repeat
-    url("../../images/illustrations/maintenance.webp");
+  background: center / 50% no-repeat
+    url("../../images/illustrations/website_maintenance.svg");
   animation: 4s go_hover ease infinite;
-  background-color: yellow;
+  background-color: #f5cac3;
 }
 
 .bg_services_redesign {
   width: 100vw;
-  background: center / contain no-repeat
-    url("../../images/illustrations/redesign.webp");
+  background: center / 50% no-repeat
+    url("../../images/illustrations/website_redesign.svg");
   animation: 6s go_hover ease infinite;
-  background-color: brown;
+  background-color: #c6c096;
 }
 
 .bg_services_ux_ui_design {
   width: 100vw;
-  background: center / contain no-repeat
-    url("../../images/illustrations/ux_ui_design.webp");
+  background: center / 50% no-repeat
+    url("../../images/illustrations/ux_ui_design.svg");
   animation: 3s go_hover ease infinite;
   position: relative;
   margin-left: 0;
-  background-color: black;
+  background-color: #ffb284;
 }
 
 .bg_services_ux_ui_design h3 span {
@@ -157,7 +153,7 @@
 /*slider*/
 .slider_services {
   display: flex;
-  width: 100vw;
+  width: 50vw;
   overflow: hidden;
 }
 
