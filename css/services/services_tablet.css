@@ -1,5 +1,10 @@
 @media (min-width: 767px) {
   .services_list {
     padding-bottom: initial;
+    height: 75vh;
+  }
+
+  .slider_services {
+    width: 50vw;
   }
 }
