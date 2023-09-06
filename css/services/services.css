@@ -47,7 +47,7 @@
 }
 
 #services_slide h3 {
-  font-family: "abril_fatface", "nunito_sans", Verdana, Tahoma, sans-serif;
+  font-family:  "nunito_sans", Verdana, Tahoma, sans-serif;
   text-transform: uppercase;
   font-size: clamp(12px, 4vw, 54px);
   background-repeat: no-repeat;
@@ -110,7 +110,7 @@
   width: 100vw;
   background: center / 50% no-repeat url("../../images/illustrations/seo.svg");
   animation: 5s go_hover ease infinite;
-  background-color: #F5DF93;
+  background-color: #f5df93;
 }
 
 .bg_services_maintenance {
