@@ -59,9 +59,9 @@
   text-shadow: 1px 1px 2px black;
 }
 
-#services_slide h3 span {
-  background-image: linear-gradient(transparent 65%, #f3e675 60%);
-}
+/* #services_slide h3 span {
+   background-image: linear-gradient(transparent 65%, #fff 60%); 
+} */
 
 #services_slide p {
   font-size: 12px;
@@ -110,7 +110,7 @@
   width: 100vw;
   background: center / 50% no-repeat url("../../images/illustrations/seo.svg");
   animation: 5s go_hover ease infinite;
-  background-color: #e8b665;
+  background-color: #F5DF93;
 }
 
 .bg_services_maintenance {
@@ -118,7 +118,7 @@
   background: center / 50% no-repeat
     url("../../images/illustrations/website_maintenance.svg");
   animation: 4s go_hover ease infinite;
-  background-color: #f5cac3;
+  background-color: #b1aec6;
 }
 
 .bg_services_redesign {
@@ -126,7 +126,7 @@
   background: center / 50% no-repeat
     url("../../images/illustrations/website_redesign.svg");
   animation: 6s go_hover ease infinite;
-  background-color: #c6c096;
+  background-color: #abf5be49;
 }
 
 .bg_services_ux_ui_design {
@@ -136,7 +136,7 @@
   animation: 3s go_hover ease infinite;
   position: relative;
   margin-left: 0;
-  background-color: #ffb284;
+  background-color: #fdda76;
 }
 
 .bg_services_ux_ui_design h3 span {
