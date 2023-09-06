@@ -32,7 +32,7 @@ function handleObserverForNavbar(entries, observerForNavbar) {
 }
 
 /* Gestion de la arrow_top */
-/* La flèche apparait quand la photo d'accueil n'est plus visible */
+/* La flèche apparait .logos_container n'est plus visible */
 var observerForArrow = new IntersectionObserver(
   function (entries) {
     if (entries[0].isIntersecting === true) {
@@ -46,7 +46,7 @@ var observerForArrow = new IntersectionObserver(
   }
 );
 
-observerForArrow.observe(document.querySelector(".first_part"));
+observerForArrow.observe(document.querySelector(".logos_container"));
 
 /* Version anglaise ou française */
 let frenchSelected = document.getElementById("french_selected");
@@ -116,7 +116,7 @@ function sendMail(params) {
   alert("Message envoyé avec succès !");
 }
 
-/* Pagination */
+/* Pagination my work */
 const paginationNumbers = document.getElementById("pagination_numbers");
 const paginatedList = document.getElementById("paginated_list");
 const listItems = paginatedList.querySelectorAll("li");

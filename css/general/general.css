@@ -92,6 +92,7 @@ h2 {
   padding-top: 6vh;
   color: #28375c;
   text-transform: uppercase;
+  text-shadow: 1px 1px 2px #28375c22;
 }
 
 .slide_content {

@@ -1,40 +1,67 @@
-@keyframes go_hover {
-  30% {
-    transform: scale(1.2);
+/* Animation slider */
+/* 
+   ~4,3% par transition, nombre calculé pour un effet de fluidité et de même durée pour chaques transitions.
+
+   reste divisé par nb de pauses
+   74,2(%) / 6 ~ 12.4(%) par pause
+*/
+@keyframes slider_services {
+  0%,
+  14.2857% {
+    transform: translateX(0);
   }
-  40%,
-  60% {
-    transform: scale(1.2);
+  16.6667%,
+  30.9524% {
+    transform: translateX(-100%);
   }
-  50% {
-    transform: scale(1.2);
+  33.3333%,
+  48.5714% {
+    transform: translateX(-200%);
   }
-  70% {
-    transform: scale(1.2);
+  50%,
+  65.2381% {
+    transform: translateX(-300%);
+  }
+  66.6667%,
+  81.9048% {
+    transform: translateX(-400%);
+  }
+  83.3333%,
+  97.1429% {
+    transform: translateX(-500%);
   }
   100% {
-    transform: scale(1);
+    transform: translateX(-600%);
   }
+}
+
+#services_slide {
+  position: relative;
+  padding: 0;
 }
 
 #services_slide h2 {
-  padding-bottom: 0;
+  width: 100vw;
+  top: 0;
+  right: 0;
 }
 
 #services_slide h3 {
-  font-family: "abril_fatface", "nunito_sans", Verdana, Tahoma, sans-serif;
+  font-family:  "nunito_sans", Verdana, Tahoma, sans-serif;
   text-transform: uppercase;
-  font-size: clamp(12px, 4vw, 24px);
+  font-size: clamp(12px, 4vw, 54px);
   background-repeat: no-repeat;
   background-position: right;
   padding-top: 10px;
-  color: #28375c;
+  color: white;
   margin: auto;
+  width: 100vw;
+  text-shadow: 1px 1px 2px black;
 }
 
-#services_slide h3 span {
-  background-image: linear-gradient(transparent 65%, #f3e675 60%);
-}
+/* #services_slide h3 span {
+   background-image: linear-gradient(transparent 65%, #fff 60%); 
+} */
 
 #services_slide p {
   font-size: 12px;
@@ -56,56 +83,60 @@
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
-  margin: 0 6vw 0 6vw;
-  padding-bottom: 6.5vh;
+  height: none;
 }
 
 .services_list div {
   display: flex;
-  align-items: center;
-  width: 48%;
-  margin-bottom: 1vh;
-  margin-right: 1vw;
-  overflow: none;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
 .bg_services_websites_creation {
-  background: center / contain no-repeat
-    url("../../images/illustrations/website_creation.webp");
+  background: center / 50% no-repeat
+    url("../../images/illustrations/website_creation.svg");
   animation: 3s go_hover ease infinite;
   animation-play-state: running;
+  background-color: #648181;
 }
 
 .bg_services_applications_creation {
-  background: center / contain no-repeat
-    url("../../images/illustrations/mobile_application.webp");
+  background: center / 50% no-repeat
+    url("../../images/illustrations/mobile_application.svg");
   animation: 2s go_hover ease infinite;
+  background-color: #cfdac6;
 }
 
 .bg_services_seo {
-  background: center / contain no-repeat
-    url("../../images/illustrations/seo.webp");
+  width: 100vw;
+  background: center / 50% no-repeat url("../../images/illustrations/seo.svg");
   animation: 5s go_hover ease infinite;
+  background-color: #f5df93;
 }
 
 .bg_services_maintenance {
-  background: center / contain no-repeat
-    url("../../images/illustrations/maintenance.webp");
+  width: 100vw;
+  background: center / 50% no-repeat
+    url("../../images/illustrations/website_maintenance.svg");
   animation: 4s go_hover ease infinite;
+  background-color: #b1aec6;
 }
 
 .bg_services_redesign {
-  background: center / contain no-repeat
-    url("../../images/illustrations/redesign.webp");
+  width: 100vw;
+  background: center / 50% no-repeat
+    url("../../images/illustrations/website_redesign.svg");
   animation: 6s go_hover ease infinite;
+  background-color: #abf5be49;
 }
 
 .bg_services_ux_ui_design {
-  background: center / contain no-repeat
-    url("../../images/illustrations/ux_ui_design.webp");
+  width: 100vw;
+  background: center / 50% no-repeat
+    url("../../images/illustrations/ux_ui_design.svg");
   animation: 3s go_hover ease infinite;
   position: relative;
   margin-left: 0;
+  background-color: #fdda76;
 }
 
 .bg_services_ux_ui_design h3 span {
@@ -115,8 +146,15 @@
   transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
 }
 
-#services_slide .services_list div img {
-  display: block;
-  width: clamp(80px, 18vw, 300px);
-  margin: auto;
+/*slider*/
+.slider_services {
+  display: flex;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.slider_services div {
+  width: 100%;
+  flex-shrink: 0;
+  animation: slider_services 12s infinite ease-in-out;
 }
