@@ -10,7 +10,6 @@
 
 #contact_slide p {
   font-size: 12px;
-  background-color: #f3e675;
   margin: auto;
   margin-bottom: 30px;
   text-align: center;
@@ -52,4 +51,9 @@ input[type="submit"] {
 input[type="submit"]:active {
   transform: translate(5px, 5px);
   box-shadow: none;
+}
+
+.project_together{
+  background-color: #f3e675;
+
 }
