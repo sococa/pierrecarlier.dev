@@ -70,15 +70,3 @@ h1 {
   display: flex;
   justify-content: space-between;
 }
-
-.telMail {
-  display: none;
-}
-
-.telMail2 {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-  font-size: 12px;
-  text-decoration: none;
-}

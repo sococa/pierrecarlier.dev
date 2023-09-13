@@ -20,21 +20,4 @@
     width: 95%;
     gap: none;
   }
-
-  .telMail {
-    display: block;
-    position: absolute;
-    z-index: 100;
-    bottom: 5px;
-    left: 5px;
-    font-size: 12px;
-    background-color: white;
-    opacity: 0.7;
-    padding: 3px;
-    border-radius: 5px;
-  }
-
-  .telMail2 {
-    display: none;
-  }
 }
