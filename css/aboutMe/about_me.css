@@ -30,13 +30,6 @@
   padding-bottom: 6.5vh;
 }
 
-#about_slide .aboutme_description {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 50vh;
-}
-
 #about_slide p {
   font-size: clamp(12px, 4vw, 16px);
   width: clamp(255px, 90vw, 100vw);
