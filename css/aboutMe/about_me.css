@@ -37,11 +37,6 @@
   padding-bottom: 20px;
 }
 
-#aboutme_description span {
-  font-weight: 900;
-  color: #28375c;
-}
-
 #about_slide ul {
   display: flex;
   flex-direction: column;
