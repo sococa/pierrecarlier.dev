@@ -59,25 +59,6 @@
   text-shadow: 1px 1px 2px black;
 }
 
-/* #services_slide h3 span {
-   background-image: linear-gradient(transparent 65%, #fff 60%); 
-} */
-
-#services_slide p {
-  font-size: 12px;
-  margin: auto;
-  text-align: center;
-}
-
-#services_slide a {
-  text-decoration: none;
-  background-color: #f3e675;
-  padding: 0 5px 0 5px;
-  color: #000;
-  width: 110px;
-  cursor: pointer;
-}
-
 .services_list {
   display: flex;
   flex-wrap: wrap;
