@@ -126,11 +126,18 @@
             </a>
           </div>
         </div>
-        <img
-          src="images\first_slide_photo.webp"
-          alt="Photo de moi en chemise"
-          id="first_slide_photo"
-        />
+        <picture>
+          <source
+            media="(max-width: 666px)"
+            srcset="images/first_slide_photo_mobile.webp"
+          />
+          <source
+            media="(max-width: 1199px)"
+            srcset="images/first_slide_photo_tablet.webp"
+          />
+          <source srcset="images/first_slide_photo_desktop.webp" />
+          <img src="" alt="" id="first_slide_photo" />
+        </picture>
       </div>
       <div class="slider_bloc" id="about_slide" data-id="0">
         <div class="relative">
