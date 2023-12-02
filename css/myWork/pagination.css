@@ -43,3 +43,8 @@
   color: #28375c;
   background: white;
 }
+
+.pagination_button.disabled {
+  opacity: 0; 
+  pointer-events: none; 
+}
